@@ -1,7 +1,7 @@
 export const site = {
   name: "KlangFinder",
   tagline: "Kopfhörer, Headsets und Bluetooth-Lautsprecher clever auswählen.",
-  url: "https://klangfinder.de",
+  url: "https://kopfhoerer-audio-ratgeber.pages.dev",
   amazonNotice:
     "Diese Seite enthält Affiliate-Links. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Außerdem können auf dieser Seite Digistore24-Partnerlinks enthalten sein.",
 };
