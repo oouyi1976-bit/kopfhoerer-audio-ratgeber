@@ -134,10 +134,10 @@ export const audioProducts: AudioProduct[] = [
       "Mehrere Farben"
     ],
     "image": "/audio-product-images/soundcore-liberty-4-nc.webp",
-    "affiliateUrl": "",
-    "affiliateStatus": "placeholder",
-    "asin": "",
-    "buttonText": "Link folgt",
+    "affiliateUrl": "https://www.amazon.de/dp/B0BZV5MQKM?tag=epic05e-21",
+    "affiliateStatus": "ready",
+    "asin": "B0BZV5MQKM",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "in-ear-kopfhoerer",
@@ -159,10 +159,10 @@ export const audioProducts: AudioProduct[] = [
       "Solide Akkulaufzeit"
     ],
     "image": "/audio-product-images/soundcore-p40i.webp",
-    "affiliateUrl": "",
-    "affiliateStatus": "placeholder",
-    "asin": "",
-    "buttonText": "Link folgt",
+    "affiliateUrl": "https://www.amazon.de/dp/B0CQXHC5FQ?tag=epic05e-21",
+    "affiliateStatus": "ready",
+    "asin": "B0CQXHC5FQ",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "in-ear-kopfhoerer"
@@ -183,10 +183,10 @@ export const audioProducts: AudioProduct[] = [
       "Leichte Bauweise"
     ],
     "image": "/audio-product-images/nothing-ear-a.webp",
-    "affiliateUrl": "",
-    "affiliateStatus": "placeholder",
-    "asin": "",
-    "buttonText": "Link folgt",
+    "affiliateUrl": "https://www.amazon.de/dp/B0CXPR5412?tag=epic05e-21",
+    "affiliateStatus": "ready",
+    "asin": "B0CXPR5412",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "in-ear-kopfhoerer",
@@ -208,10 +208,10 @@ export const audioProducts: AudioProduct[] = [
       "Alltags-Case"
     ],
     "image": "/audio-product-images/bose-quietcomfort-earbuds.webp",
-    "affiliateUrl": "",
-    "affiliateStatus": "placeholder",
-    "asin": "",
-    "buttonText": "Link folgt",
+    "affiliateUrl": "https://www.amazon.de/dp/B0D8BZDPXB?tag=epic05e-21",
+    "affiliateStatus": "ready",
+    "asin": "B0D8BZDPXB",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "in-ear-kopfhoerer",
@@ -233,10 +233,10 @@ export const audioProducts: AudioProduct[] = [
       "Kompaktes Case"
     ],
     "image": "/audio-product-images/beats-fit-pro.webp",
-    "affiliateUrl": "",
-    "affiliateStatus": "placeholder",
-    "asin": "",
-    "buttonText": "Link folgt",
+    "affiliateUrl": "https://www.amazon.de/dp/B09Q7CW3M6?tag=epic05e-21",
+    "affiliateStatus": "ready",
+    "asin": "B09Q7CW3M6",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "in-ear-kopfhoerer",
@@ -283,10 +283,10 @@ export const audioProducts: AudioProduct[] = [
       "Alltagstaugliches Case"
     ],
     "image": "/audio-product-images/shokz-openfit-air.webp",
-    "affiliateUrl": "",
-    "affiliateStatus": "placeholder",
-    "asin": "",
-    "buttonText": "Link folgt",
+    "affiliateUrl": "https://www.amazon.de/dp/B0CRTM6B55?tag=epic05e-21",
+    "affiliateStatus": "ready",
+    "asin": "B0CRTM6B55",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "in-ear-kopfhoerer",
@@ -308,10 +308,10 @@ export const audioProducts: AudioProduct[] = [
       "Premium-Case"
     ],
     "image": "/audio-product-images/sennheiser-momentum-true-wireless-4.webp",
-    "affiliateUrl": "",
-    "affiliateStatus": "placeholder",
-    "asin": "",
-    "buttonText": "Link folgt",
+    "affiliateUrl": "https://www.amazon.de/dp/B0CTHVX6DK?tag=epic05e-21",
+    "affiliateStatus": "ready",
+    "asin": "B0CTHVX6DK",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "in-ear-kopfhoerer",
@@ -483,10 +483,10 @@ export const audioProducts: AudioProduct[] = [
       "Immersive-Audio-Modus"
     ],
     "image": "/audio-product-images/bose-quietcomfort-ultra-headphones.webp",
-    "affiliateUrl": "",
-    "affiliateStatus": "placeholder",
-    "asin": "",
-    "buttonText": "Link folgt",
+    "affiliateUrl": "https://www.amazon.de/dp/B0FDKQZ18F?tag=epic05e-21",
+    "affiliateStatus": "ready",
+    "asin": "B0FDKQZ18F",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "over-ear-kopfhoerer",
@@ -629,10 +629,10 @@ export const audioProducts: AudioProduct[] = [
       "Lange Laufzeit"
     ],
     "image": "/audio-product-images/jbl-tour-one-m2.webp",
-    "affiliateUrl": "",
-    "affiliateStatus": "placeholder",
-    "asin": "",
-    "buttonText": "Link folgt",
+    "affiliateUrl": "https://www.amazon.de/dp/B0BSXDJSPH?tag=epic05e-21",
+    "affiliateStatus": "ready",
+    "asin": "B0BSXDJSPH",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "over-ear-kopfhoerer",
@@ -774,10 +774,10 @@ export const audioProducts: AudioProduct[] = [
       "PC- und Konsolenfokus"
     ],
     "image": "/audio-product-images/logitech-g-pro-x-2-lightspeed.webp",
-    "affiliateUrl": "",
-    "affiliateStatus": "placeholder",
-    "asin": "",
-    "buttonText": "Link folgt",
+    "affiliateUrl": "https://www.amazon.de/dp/B07W6H7PY2?tag=epic05e-21",
+    "affiliateStatus": "ready",
+    "asin": "B07W6H7PY2",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "gaming-headsets"
@@ -798,10 +798,10 @@ export const audioProducts: AudioProduct[] = [
       "Ausklappbares Mikrofon"
     ],
     "image": "/audio-product-images/sony-inzone-h5.webp",
-    "affiliateUrl": "",
-    "affiliateStatus": "placeholder",
-    "asin": "",
-    "buttonText": "Link folgt",
+    "affiliateUrl": "https://www.amazon.de/dp/B0CJ3H9XD9?tag=epic05e-21",
+    "affiliateStatus": "ready",
+    "asin": "B0CJ3H9XD9",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "gaming-headsets"
@@ -944,10 +944,10 @@ export const audioProducts: AudioProduct[] = [
       "Viele Farben"
     ],
     "image": "/audio-product-images/jbl-go-4.webp",
-    "affiliateUrl": "",
-    "affiliateStatus": "placeholder",
-    "asin": "",
-    "buttonText": "Link folgt",
+    "affiliateUrl": "https://www.amazon.de/dp/B0CX5C6WP3?tag=epic05e-21",
+    "affiliateStatus": "ready",
+    "asin": "B0CX5C6WP3",
+    "buttonText": "Zum Angebot",
     "collections": [
       "bluetooth-lautsprecher",
       "outdoor-lautsprecher",
@@ -1263,10 +1263,10 @@ export const audioProducts: AudioProduct[] = [
       "Klassische Bedienung"
     ],
     "image": "/audio-product-images/marshall-emberton-iii.webp",
-    "affiliateUrl": "",
-    "affiliateStatus": "placeholder",
-    "asin": "",
-    "buttonText": "Link folgt",
+    "affiliateUrl": "https://www.amazon.de/dp/B0GXH3N61Z?tag=epic05e-21",
+    "affiliateStatus": "ready",
+    "asin": "B0GXH3N61Z",
+    "buttonText": "Zum Angebot",
     "collections": [
       "bluetooth-lautsprecher",
       "outdoor-lautsprecher"
@@ -1287,10 +1287,10 @@ export const audioProducts: AudioProduct[] = [
       "Befestigungsband"
     ],
     "image": "/audio-product-images/marshall-willen-ii.webp",
-    "affiliateUrl": "",
-    "affiliateStatus": "placeholder",
-    "asin": "",
-    "buttonText": "Link folgt",
+    "affiliateUrl": "https://www.amazon.de/dp/B0DD7T8H2Q?tag=epic05e-21",
+    "affiliateStatus": "ready",
+    "asin": "B0DD7T8H2Q",
+    "buttonText": "Zum Angebot",
     "collections": [
       "bluetooth-lautsprecher",
       "outdoor-lautsprecher",
@@ -1312,10 +1312,10 @@ export const audioProducts: AudioProduct[] = [
       "Powerbank-Funktion"
     ],
     "image": "/audio-product-images/tribit-stormbox-micro-2.webp",
-    "affiliateUrl": "",
-    "affiliateStatus": "placeholder",
-    "asin": "",
-    "buttonText": "Link folgt",
+    "affiliateUrl": "https://www.amazon.de/dp/B09Q59321N?tag=epic05e-21",
+    "affiliateStatus": "ready",
+    "asin": "B09Q59321N",
+    "buttonText": "Zum Angebot",
     "collections": [
       "bluetooth-lautsprecher",
       "outdoor-lautsprecher",
@@ -1337,10 +1337,10 @@ export const audioProducts: AudioProduct[] = [
       "Lange Laufzeit"
     ],
     "image": "/audio-product-images/tribit-stormbox-blast.webp",
-    "affiliateUrl": "",
-    "affiliateStatus": "placeholder",
-    "asin": "",
-    "buttonText": "Link folgt",
+    "affiliateUrl": "https://www.amazon.de/dp/B09PMYTJD2?tag=epic05e-21",
+    "affiliateStatus": "ready",
+    "asin": "B09PMYTJD2",
+    "buttonText": "Zum Angebot",
     "collections": [
       "bluetooth-lautsprecher",
       "party-lautsprecher",
@@ -1362,10 +1362,10 @@ export const audioProducts: AudioProduct[] = [
       "Kräftige Abstimmung"
     ],
     "image": "/audio-product-images/teufel-rockster-go-2.webp",
-    "affiliateUrl": "",
-    "affiliateStatus": "placeholder",
-    "asin": "",
-    "buttonText": "Link folgt",
+    "affiliateUrl": "https://www.amazon.de/dp/B0CW1FDMPR?tag=epic05e-21",
+    "affiliateStatus": "ready",
+    "asin": "B0CW1FDMPR",
+    "buttonText": "Zum Angebot",
     "collections": [
       "bluetooth-lautsprecher",
       "outdoor-lautsprecher"
@@ -1435,10 +1435,10 @@ export const audioProducts: AudioProduct[] = [
       "Mikrofonoptionen"
     ],
     "image": "/audio-product-images/sony-ult-tower-9.webp",
-    "affiliateUrl": "",
-    "affiliateStatus": "placeholder",
-    "asin": "",
-    "buttonText": "Link folgt",
+    "affiliateUrl": "https://www.amazon.de/dp/B0DZ767WLZ?tag=epic05e-21",
+    "affiliateStatus": "ready",
+    "asin": "B0DZ767WLZ",
+    "buttonText": "Zum Angebot",
     "collections": [
       "bluetooth-lautsprecher",
       "party-lautsprecher"
@@ -1459,10 +1459,10 @@ export const audioProducts: AudioProduct[] = [
       "Tragefreundliches Gehäuse"
     ],
     "image": "/audio-product-images/lg-xboom-go-xg2t.webp",
-    "affiliateUrl": "",
-    "affiliateStatus": "placeholder",
-    "asin": "",
-    "buttonText": "Link folgt",
+    "affiliateUrl": "https://www.amazon.de/dp/B0CX4KQF17?tag=epic05e-21",
+    "affiliateStatus": "ready",
+    "asin": "B0CX4KQF17",
+    "buttonText": "Zum Angebot",
     "collections": [
       "bluetooth-lautsprecher",
       "outdoor-lautsprecher",
@@ -1484,10 +1484,10 @@ export const audioProducts: AudioProduct[] = [
       "Stereo-Pairing möglich"
     ],
     "image": "/audio-product-images/denon-home-150.webp",
-    "affiliateUrl": "",
-    "affiliateStatus": "placeholder",
-    "asin": "",
-    "buttonText": "Link folgt",
+    "affiliateUrl": "https://www.amazon.de/dp/B0DT213TBL?tag=epic05e-21",
+    "affiliateStatus": "ready",
+    "asin": "B0DT213TBL",
+    "buttonText": "Zum Angebot",
     "collections": [
       "bluetooth-lautsprecher"
     ],
