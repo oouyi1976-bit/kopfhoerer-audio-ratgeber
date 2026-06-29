@@ -1,0 +1,47 @@
+---
+import BaseLayout from "@components/Layout/BaseLayout.astro";
+import AffiliateNotice from "@components/AffiliateNotice.astro";
+---
+
+<BaseLayout
+  title="Noise Cancelling erklärt"
+  description="Was aktives Noise Cancelling bei Kopfhörern kann, welche Grenzen ANC hat und worauf du beim Kauf achten solltest."
+>
+  <section class="dark-section py-14 sm:py-20">
+    <div class="page-shell max-w-4xl">
+      <p class="inline-flex rounded-full border border-cyan-300/30 bg-cyan-300/10 px-4 py-2 text-sm font-bold text-cyan-100">ANC verstehen</p>
+      <h1 class="mt-6 text-4xl font-black leading-tight text-white sm:text-5xl">Noise Cancelling einfach erklärt</h1>
+      <p class="mt-5 text-lg leading-8 text-slate-300">
+        ANC kann deinen Alltag ruhiger machen, aber es ist kein Stummschalter für die Welt. Entscheidend ist, welche Geräusche du reduzieren willst.
+      </p>
+      <div class="mt-8"><AffiliateNotice /></div>
+    </div>
+  </section>
+  <article class="light-section bg-white py-12 sm:py-16">
+    <div class="page-shell content-prose max-w-3xl">
+      <h2>Wie funktioniert ANC?</h2>
+      <p>
+        Aktives Noise Cancelling nutzt Mikrofone, um Umgebungsgeräusche zu erfassen. Der Kopfhörer erzeugt ein Gegensignal, das bestimmte Geräuschanteile reduziert. Besonders gut funktioniert das bei gleichmäßigen, tiefen Geräuschen wie Motoren, Klimaanlagen oder Bahnrauschen.
+      </p>
+      <h2>Warum verschwinden Stimmen nicht komplett?</h2>
+      <p>
+        Sprache, Tastaturklappern und kurze Impulse sind schwerer vorherzusagen als konstantes Brummen. Gute ANC-Kopfhörer dämpfen auch solche Geräusche etwas, aber sie löschen sie nicht vollständig. Die passive Abdichtung durch Polster oder Ohrstöpsel bleibt deshalb wichtig.
+      </p>
+      <h2>Transparenzmodus ist kein Extra, sondern Alltag</h2>
+      <p>
+        Ein guter Transparenzmodus lässt Umgebung kontrolliert hinein. Das ist praktisch an Bahnhöfen, beim kurzen Gespräch, im Büro oder beim Warten an der Straße. Wenn du Kopfhörer oft unterwegs trägst, solltest du die Bedienung für ANC und Transparenzmodus besonders beachten.
+      </p>
+      <h2>Over-Ear oder In-Ear mit ANC?</h2>
+      <p>
+        Over-Ears bieten häufig mehr Komfort über mehrere Stunden und zusätzliche passive Dämpfung durch die Ohrpolster. In-Ears sind kleiner und mobiler, sitzen aber stark abhängig von Ohrform und Aufsatz. Für Flug und Bahn greifen viele zu Over-Ears, für Tasche und Alltag zu In-Ears.
+      </p>
+      <h2>Worauf du achten solltest</h2>
+      <ul>
+        <li>Mehrere ANC-Stufen oder adaptive Regelung sind praktisch.</li>
+        <li>Ein guter Sitz verbessert ANC stärker als viele Marketingbegriffe.</li>
+        <li>Multipoint ist hilfreich, wenn Laptop und Smartphone parallel genutzt werden.</li>
+        <li>ANC verbraucht Akku, die Laufzeit mit aktiviertem ANC ist entscheidend.</li>
+      </ul>
+    </div>
+  </article>
+</BaseLayout>

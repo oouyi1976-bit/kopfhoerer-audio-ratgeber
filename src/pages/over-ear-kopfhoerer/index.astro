@@ -1,0 +1,10 @@
+---
+import BaseLayout from "@components/Layout/BaseLayout.astro";
+import ProductCollectionPage from "@components/ProductCollectionPage.astro";
+import { productPages } from "@data/site";
+const page = productPages["over-ear-kopfhoerer"];
+---
+
+<BaseLayout title={page.title} description={page.description}>
+  <ProductCollectionPage page={page} />
+</BaseLayout>

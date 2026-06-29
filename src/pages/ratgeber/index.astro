@@ -1,0 +1,29 @@
+---
+import BaseLayout from "@components/Layout/BaseLayout.astro";
+import GuideCard from "@components/GuideCard.astro";
+import AffiliateNotice from "@components/AffiliateNotice.astro";
+import { guides } from "@data/site";
+---
+
+<BaseLayout
+  title="Audio-Ratgeber"
+  description="KlangFinder Ratgeber zu Kopfhörern, Noise Cancelling, Bluetooth-Lautsprechern und IPX-Schutzklassen."
+>
+  <section class="dark-section py-14 sm:py-20">
+    <div class="page-shell">
+      <p class="inline-flex rounded-full border border-cyan-300/30 bg-cyan-300/10 px-4 py-2 text-sm font-bold text-cyan-100">Ratgeber</p>
+      <h1 class="mt-6 max-w-4xl text-4xl font-black leading-tight text-white sm:text-5xl">Audio-Kaufberatung, die den Alltag ernst nimmt</h1>
+      <p class="mt-5 max-w-3xl text-lg leading-8 text-slate-300">
+        Hier findest du verständliche Orientierung für Kopfhörer, Headsets und Bluetooth-Lautsprecher. Der Fokus liegt auf Einsatzzwecken, nicht auf künstlichen Testsiegern.
+      </p>
+      <div class="mt-8 max-w-3xl">
+        <AffiliateNotice />
+      </div>
+    </div>
+  </section>
+  <section class="light-section bg-[#f4f8fb] py-14 sm:py-18">
+    <div class="page-shell grid gap-6 md:grid-cols-2">
+      {guides.map((guide) => <GuideCard {...guide} />)}
+    </div>
+  </section>
+</BaseLayout>

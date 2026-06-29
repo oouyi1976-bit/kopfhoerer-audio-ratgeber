@@ -1,0 +1,75 @@
+---
+import AffiliateNotice from "./AffiliateNotice.astro";
+import ProductGrid from "./ProductGrid.astro";
+import GuideCard from "./GuideCard.astro";
+import { guides } from "@data/site";
+import { productsForCollection, readyProducts } from "@data/audioProducts";
+
+type Page = {
+  eyebrow: string;
+  title: string;
+  description: string;
+  intro: string;
+  collection: string;
+};
+
+type Props = {
+  page: Page;
+};
+
+const { page } = Astro.props;
+const products = productsForCollection(page.collection);
+const readyCount = products.filter((product) => product.affiliateStatus === "ready").length;
+const relatedGuides = guides.slice(0, 3);
+---
+
+<section class="dark-section py-14 sm:py-18">
+  <div class="page-shell">
+    <p class="inline-flex rounded-full border border-cyan-300/30 bg-cyan-300/10 px-4 py-2 text-sm font-bold text-cyan-100">
+      {page.eyebrow}
+    </p>
+    <h1 class="mt-6 max-w-4xl text-4xl font-black leading-tight text-white sm:text-5xl">{page.title}</h1>
+    <p class="mt-5 max-w-3xl text-lg leading-8 text-slate-300">{page.description}</p>
+    <div class="mt-8 grid gap-4 md:grid-cols-[1fr_auto] md:items-end">
+      <AffiliateNotice />
+      <div class="rounded-2xl border border-white/10 bg-white/10 px-5 py-4 text-sm text-slate-200">
+        <strong class="text-white">{products.length}</strong> Produkte, <strong class="text-white">{readyCount}</strong> geprüfte Amazon-Links
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="light-section bg-[#f4f8fb] py-12 sm:py-16">
+  <div class="page-shell">
+    <div class="grid gap-8 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
+      <div class="lg:sticky lg:top-28">
+        <h2 class="text-3xl font-black text-slate-950">Worauf es hier ankommt</h2>
+        <p class="mt-4 leading-8 text-slate-700">{page.intro}</p>
+        <div class="mt-6 rounded-2xl border border-slate-200 bg-white p-5 shadow-card">
+          <h3 class="text-lg font-black text-slate-950">Schnellcheck</h3>
+          <ul class="mt-4 grid gap-3 text-sm leading-6 text-slate-700">
+            <li>Keine Amazon-Preise, keine Sterne und keine erfundenen Testurteile.</li>
+            <li>Ready-Produkte verlinken Bild, Titel und Button auf dieselbe Amazon-ASIN.</li>
+            <li>Unsichere Produkte bleiben als Platzhalter sichtbar, aber ohne Amazon-Link.</li>
+          </ul>
+        </div>
+      </div>
+      <ProductGrid products={products} />
+    </div>
+  </div>
+</section>
+
+<section class="light-section bg-white py-12 sm:py-16">
+  <div class="page-shell">
+    <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+      <div>
+        <p class="text-sm font-black uppercase tracking-[0.18em] text-cyan-700">Weiterlesen</p>
+        <h2 class="mt-2 text-3xl font-black text-slate-950">Ratgeber für bessere Kaufentscheidungen</h2>
+      </div>
+      <a href="/ratgeber/" class="text-sm font-black text-cyan-700 hover:text-violet-700">Alle Ratgeber</a>
+    </div>
+    <div class="mt-8 grid gap-6 md:grid-cols-3">
+      {relatedGuides.map((guide) => <GuideCard {...guide} />)}
+    </div>
+  </div>
+</section>

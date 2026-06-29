@@ -1,0 +1,37 @@
+---
+import BaseLayout from "@components/Layout/BaseLayout.astro";
+import AffiliateNotice from "@components/AffiliateNotice.astro";
+---
+
+<BaseLayout
+  title="Affiliate-Hinweis"
+  description="Transparenter Hinweis zu Amazon-Partnerlinks und redaktioneller Arbeitsweise auf KlangFinder."
+>
+  <section class="dark-section py-14 sm:py-20">
+    <div class="page-shell max-w-4xl">
+      <h1 class="text-4xl font-black leading-tight text-white sm:text-5xl">Affiliate-Hinweis</h1>
+      <p class="mt-5 text-lg leading-8 text-slate-300">KlangFinder finanziert sich perspektivisch über Partnerlinks. Die redaktionelle Einordnung bleibt davon getrennt.</p>
+      <div class="mt-8"><AffiliateNotice /></div>
+    </div>
+  </section>
+  <section class="light-section bg-white py-12 sm:py-16">
+    <div class="page-shell content-prose max-w-3xl">
+      <h2>Was bedeutet Affiliate-Link?</h2>
+      <p>
+        Einige Produktlinks führen zu Amazon.de. Wenn du über einen solchen Link etwas kaufst, kann KlangFinder eine Provision erhalten. Für dich entstehen dadurch keine zusätzlichen Kosten.
+      </p>
+      <h2>Amazon-Partnerprogramm</h2>
+      <p>
+        Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Ready-Links in Produktkarten nutzen die Partner-ID epic05e-21.
+      </p>
+      <h2>Redaktionelle Einordnung</h2>
+      <p>
+        Die Seite übernimmt keine Amazon-Preise, keine Sternebewertungen und keine erfundenen Testurteile. Produktkarten beschreiben Einsatzbereiche, Stärken und typische Kaufgründe. Unsichere Produkte bleiben als Platzhalter ohne Amazon-Link sichtbar.
+      </p>
+      <h2>Vor dem Kauf prüfen</h2>
+      <p>
+        Verfügbarkeit, Lieferumfang, Preis und technische Details können sich ändern. Prüfe die Angaben immer auf der verlinkten Händlerseite, bevor du kaufst.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

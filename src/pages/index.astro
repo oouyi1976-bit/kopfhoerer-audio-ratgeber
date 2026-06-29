@@ -1,0 +1,86 @@
+---
+import BaseLayout from "@components/Layout/BaseLayout.astro";
+import Hero from "@components/Hero.astro";
+import AffiliateNotice from "@components/AffiliateNotice.astro";
+import CategoryCard from "@components/CategoryCard.astro";
+import ProductGrid from "@components/ProductGrid.astro";
+import GuideCard from "@components/GuideCard.astro";
+import { audioProducts } from "@data/audioProducts";
+import { categoryCards, guides } from "@data/site";
+
+const topIds = [
+  "sony-wh-1000xm5",
+  "sony-wf-1000xm5",
+  "jbl-charge-5",
+  "steelseries-arctis-nova-7-gen2",
+  "soundcore-boom-2-plus",
+  "jbl-junior-470nc",
+];
+const topProducts = topIds
+  .map((id) => audioProducts.find((product) => product.id === id))
+  .filter(Boolean);
+---
+
+<BaseLayout
+  title="Die besten Kopfhörer & Bluetooth-Lautsprecher für deinen Alltag"
+  description="KlangFinder hilft dir bei der Auswahl von Kopfhörern, Gaming-Headsets und Bluetooth-Lautsprechern mit ehrlichen Empfehlungen, Ratgebern und Amazon-Links."
+>
+  <Hero
+    title="Die besten Kopfhörer & Bluetooth-Lautsprecher für deinen Alltag"
+    subtitle="Moderne Kaufberatung für In-Ears, Over-Ears, Noise-Cancelling-Kopfhörer, Gaming-Headsets und portable Speaker. Ohne Fake-Tests, ohne Preise, ohne Sterne-Magie."
+  />
+
+  <section class="dark-section pb-12">
+    <div class="page-shell">
+      <AffiliateNotice />
+    </div>
+  </section>
+
+  <section class="light-section bg-[#f4f8fb] py-14 sm:py-18">
+    <div class="page-shell">
+      <div class="max-w-3xl">
+        <p class="text-sm font-black uppercase tracking-[0.18em] text-cyan-700">Kategorien</p>
+        <h2 class="mt-3 text-3xl font-black text-slate-950 sm:text-4xl">Schnell zum passenden Audio-Setup</h2>
+        <p class="mt-4 text-lg leading-8 text-slate-700">
+          Spring direkt in die Kategorie, die zu deinem Alltag passt. Die Karten sind bewusst nach Nutzungssituationen sortiert, nicht nach künstlichen Bestenlisten.
+        </p>
+      </div>
+      <div class="mt-9 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        {categoryCards.map((category) => <CategoryCard {...category} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="light-section bg-white py-14 sm:py-18">
+    <div class="page-shell">
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+        <div class="max-w-3xl">
+          <p class="text-sm font-black uppercase tracking-[0.18em] text-violet-700">Top-Empfehlungen</p>
+          <h2 class="mt-3 text-3xl font-black text-slate-950 sm:text-4xl">Starke Einstiege für häufige Einsatzzwecke</h2>
+          <p class="mt-4 text-lg leading-8 text-slate-700">
+            Eine kuratierte Auswahl aus Kopfhörern, Headsets und Lautsprechern, die typische Kaufabsichten abdeckt: Ruhe, Sport, Gaming, Outdoor und Party.
+          </p>
+        </div>
+        <a href="/kopfhoerer/" class="text-sm font-black text-cyan-700 hover:text-violet-700">Alle Kopfhörer</a>
+      </div>
+      <div class="mt-9">
+        <ProductGrid products={topProducts} />
+      </div>
+    </div>
+  </section>
+
+  <section class="light-section bg-[#eef5f9] py-14 sm:py-18">
+    <div class="page-shell">
+      <div class="max-w-3xl">
+        <p class="text-sm font-black uppercase tracking-[0.18em] text-cyan-700">Ratgeber</p>
+        <h2 class="mt-3 text-3xl font-black text-slate-950 sm:text-4xl">Kaufberatung ohne Nebelmaschine</h2>
+        <p class="mt-4 text-lg leading-8 text-slate-700">
+          Verständliche Ratgeber zu ANC, IPX-Schutzklassen, Lautsprechergrößen und der Frage, welcher Kopfhörertyp wirklich zu dir passt.
+        </p>
+      </div>
+      <div class="mt-9 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        {guides.map((guide) => <GuideCard {...guide} />)}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

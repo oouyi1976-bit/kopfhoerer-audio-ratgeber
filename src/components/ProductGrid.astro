@@ -1,0 +1,14 @@
+---
+import type { AudioProduct } from "@data/audioProducts";
+import ProductCard from "./ProductCard.astro";
+
+type Props = {
+  products: AudioProduct[];
+};
+
+const { products } = Astro.props;
+---
+
+<div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+  {products.map((product) => <ProductCard product={product} />)}
+</div>

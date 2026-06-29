@@ -1,0 +1,51 @@
+---
+import BaseLayout from "@components/Layout/BaseLayout.astro";
+import AffiliateNotice from "@components/AffiliateNotice.astro";
+---
+
+<BaseLayout
+  title="Welche Kopfhörer passen zu mir?"
+  description="Kaufberatung für In-Ear, Over-Ear, Noise Cancelling, Sportkopfhörer und Gaming-Headsets nach Alltag und Nutzung."
+>
+  <section class="dark-section py-14 sm:py-20">
+    <div class="page-shell max-w-4xl">
+      <p class="inline-flex rounded-full border border-cyan-300/30 bg-cyan-300/10 px-4 py-2 text-sm font-bold text-cyan-100">Kaufentscheidung</p>
+      <h1 class="mt-6 text-4xl font-black leading-tight text-white sm:text-5xl">Welche Kopfhörer passen zu mir?</h1>
+      <p class="mt-5 text-lg leading-8 text-slate-300">
+        Der beste Kopfhörer ist nicht automatisch der teuerste. Er ist der, der zu deinen Wegen, Ohren, Geräten und Hörgewohnheiten passt.
+      </p>
+      <div class="mt-8"><AffiliateNotice /></div>
+    </div>
+  </section>
+  <article class="light-section bg-white py-12 sm:py-16">
+    <div class="page-shell content-prose max-w-3xl">
+      <h2>1. Starte mit deinem Hauptszenario</h2>
+      <p>
+        Für Pendeln und Großraumbüro sind Noise-Cancelling-Modelle praktisch, weil sie gleichmäßige Geräusche reduzieren. Für Sport zählen sicherer Sitz, Schutz gegen Schweiß und Bedienbarkeit. Für lange Schreibtischphasen sind Over-Ears oft angenehmer, weil sie weniger Druck im Ohr erzeugen.
+      </p>
+      <h2>2. In-Ear oder Over-Ear?</h2>
+      <p>
+        In-Ears sind klein, leicht und verschwinden in der Tasche. Sie eignen sich für Alltag und Sport, können aber je nach Ohrform drücken. Over-Ears sind größer, meist bequemer und liefern oft mehr Bühne und Akku. Dafür nehmen sie mehr Platz ein und können im Sommer wärmer werden.
+      </p>
+      <h2>3. Brauchst du Noise Cancelling?</h2>
+      <p>
+        ANC lohnt sich besonders bei Bahn, Flugzeug, Straßenrauschen und Lüftern. Wenn du viel draußen läufst oder Rad fährst, kann ein Open-Ear-Modell sinnvoller sein, weil du Verkehr und Menschen besser wahrnimmst. Wichtig ist: ANC ersetzt keine Aufmerksamkeit im Straßenverkehr.
+      </p>
+      <h2>4. Gaming ist ein eigener Fall</h2>
+      <p>
+        Für Gaming ist Bluetooth allein oft nicht optimal, weil Latenz entstehen kann. Viele gute Gaming-Headsets nutzen deshalb 2,4-GHz-Funk mit USB-Dongle. Prüfe außerdem Mikrofonqualität, Gewicht, Ohrpolster und ob PC, PlayStation, Xbox oder Switch unterstützt werden.
+      </p>
+      <h2>5. Kinderkopfhörer brauchen Grenzen</h2>
+      <p>
+        Bei Kinderkopfhörern sind Lautstärkebegrenzung, robuste Gelenke und einfache Bedienung wichtiger als maximale Lautstärke. Für Reisen kann ANC angenehm sein, im Alltag sollte aber immer klar bleiben, ob Kinder ihre Umgebung noch ausreichend hören.
+      </p>
+      <h2>Kurzempfehlung</h2>
+      <ul>
+        <li>Alltag und Tasche: True-Wireless-In-Ears.</li>
+        <li>Büro und Reisen: Over-Ears mit ANC.</li>
+        <li>Laufen und Radfahren: Open-Ear oder sicher sitzende Sport-In-Ears.</li>
+        <li>Gaming: Headset mit 2,4-GHz-Funk und gutem Mikrofon.</li>
+      </ul>
+    </div>
+  </article>
+</BaseLayout>

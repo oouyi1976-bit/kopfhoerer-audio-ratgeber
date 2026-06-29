@@ -1,0 +1,52 @@
+---
+type Props = {
+  eyebrow?: string;
+  title: string;
+  subtitle: string;
+};
+
+const { eyebrow = "KlangFinder", title, subtitle } = Astro.props;
+---
+
+<section class="dark-section overflow-hidden py-16 sm:py-20 lg:py-24">
+  <div class="page-shell grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+    <div>
+      <p class="inline-flex rounded-full border border-cyan-300/30 bg-cyan-300/10 px-4 py-2 text-sm font-bold text-cyan-100">
+        {eyebrow}
+      </p>
+      <h1 class="mt-7 max-w-4xl text-4xl font-black leading-[1.05] tracking-normal text-white sm:text-5xl lg:text-6xl">
+        {title}
+      </h1>
+      <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
+        {subtitle}
+      </p>
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <a href="/kopfhoerer/" class="rounded-full bg-cyan-300 px-6 py-3 text-center text-sm font-black text-ink shadow-glow transition hover:-translate-y-0.5">
+          Kopfhörer finden
+        </a>
+        <a href="/bluetooth-lautsprecher/" class="rounded-full border border-white/15 px-6 py-3 text-center text-sm font-black text-white transition hover:bg-white/10">
+          Lautsprecher ansehen
+        </a>
+      </div>
+    </div>
+    <div class="relative min-h-[360px] sm:min-h-[470px]">
+      <div class="absolute inset-0 rounded-[2rem] border border-white/10 bg-white/[0.04] shadow-glow"></div>
+      <img
+        src="/audio-product-images/sony-wh-1000xm5.svg"
+        alt="Moderne Kopfhörer-Visualisierung"
+        class="absolute -left-8 top-3 w-[72%] rotate-[-8deg] rounded-[2rem] shadow-2xl sm:left-0"
+        loading="eager"
+      />
+      <img
+        src="/audio-product-images/jbl-charge-5.svg"
+        alt="Bluetooth-Lautsprecher-Visualisierung"
+        class="absolute bottom-0 right-0 w-[68%] rotate-[6deg] rounded-[2rem] shadow-2xl"
+        loading="eager"
+      />
+      <div class="absolute right-8 top-8 rounded-2xl border border-white/10 bg-white/10 px-5 py-4 backdrop-blur-xl">
+        <p class="text-3xl font-black text-white">60</p>
+        <p class="text-sm font-semibold text-slate-300">kuratierte Produktkarten</p>
+      </div>
+    </div>
+  </div>
+</section>

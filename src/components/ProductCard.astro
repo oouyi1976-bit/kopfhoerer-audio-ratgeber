@@ -1,0 +1,65 @@
+---
+import type { AudioProduct } from "@data/audioProducts";
+
+type Props = {
+  product: AudioProduct;
+};
+
+const { product } = Astro.props;
+const isReady = product.affiliateStatus === "ready";
+const rel = "nofollow sponsored noopener noreferrer";
+---
+
+<article class="flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-card">
+  <div class="aspect-[4/3] bg-slate-100">
+    {
+      isReady ? (
+        <a href={product.affiliateUrl} target="_blank" rel={rel} aria-label={`${product.title} bei Amazon ansehen`}>
+          <img src={product.image} alt={`${product.title} Produktvisualisierung`} class="h-full w-full object-cover" loading="lazy" />
+        </a>
+      ) : (
+        <img src={product.image} alt={`${product.title} Produktvisualisierung`} class="h-full w-full object-cover" loading="lazy" />
+      )
+    }
+  </div>
+  <div class="flex flex-1 flex-col p-5">
+    <p class="text-xs font-black uppercase tracking-[0.16em] text-cyan-700">{product.category}</p>
+    <h3 class="mt-3 text-xl font-black leading-tight text-slate-950">
+      {
+        isReady ? (
+          <a href={product.affiliateUrl} target="_blank" rel={rel} class="hover:text-cyan-700">
+            {product.title}
+          </a>
+        ) : (
+          <span>{product.title}</span>
+        )
+      }
+    </h3>
+    <p class="mt-3 text-sm leading-6 text-slate-600">{product.shortDescription}</p>
+    <div class="mt-4 rounded-xl bg-slate-50 p-4">
+      <p class="text-xs font-black uppercase tracking-[0.14em] text-slate-500">Am besten für</p>
+      <p class="mt-1 text-sm font-bold leading-6 text-slate-800">{product.bestFor}</p>
+    </div>
+    <ul class="mt-4 grid gap-2 text-sm leading-5 text-slate-700">
+      {product.highlights.map((highlight) => <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-500"></span>{highlight}</li>)}
+    </ul>
+    <div class="mt-auto pt-5">
+      {
+        isReady ? (
+          <a
+            href={product.affiliateUrl}
+            target="_blank"
+            rel={rel}
+            class="inline-flex w-full items-center justify-center rounded-xl bg-slate-950 px-4 py-3 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-cyan-700"
+          >
+            {product.buttonText}
+          </a>
+        ) : (
+          <span class="inline-flex w-full cursor-not-allowed items-center justify-center rounded-xl bg-slate-100 px-4 py-3 text-sm font-black text-slate-500">
+            {product.buttonText}
+          </span>
+        )
+      }
+    </div>
+  </div>
+</article>

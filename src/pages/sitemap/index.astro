@@ -1,0 +1,48 @@
+---
+import BaseLayout from "@components/Layout/BaseLayout.astro";
+import { categoryCards, guides, productPages } from "@data/site";
+
+const productLinks = Object.values(productPages).map((page) => ({
+  title: page.title,
+  href: page.href,
+}));
+const legalLinks = [
+  { title: "Impressum", href: "/impressum/" },
+  { title: "Datenschutz", href: "/datenschutz/" },
+  { title: "Affiliate-Hinweis", href: "/affiliate-hinweis/" },
+  { title: "XML-Sitemap", href: "/sitemap-index.xml" },
+];
+---
+
+<BaseLayout title="Sitemap" description="Sitemap der KlangFinder-Seiten mit Produktkategorien, Ratgebern und rechtlichen Seiten.">
+  <section class="dark-section py-14 sm:py-20">
+    <div class="page-shell max-w-4xl">
+      <h1 class="text-4xl font-black leading-tight text-white sm:text-5xl">Sitemap</h1>
+      <p class="mt-5 text-lg leading-8 text-slate-300">Alle wichtigen Seiten von KlangFinder auf einen Blick.</p>
+    </div>
+  </section>
+  <section class="light-section bg-white py-12 sm:py-16">
+    <div class="page-shell grid gap-8 md:grid-cols-3">
+      <div>
+        <h2 class="text-2xl font-black text-slate-950">Produktseiten</h2>
+        <div class="mt-5 grid gap-3 text-sm font-bold text-cyan-800">
+          {productLinks.map((link) => <a href={link.href} class="hover:text-violet-700">{link.title}</a>)}
+        </div>
+      </div>
+      <div>
+        <h2 class="text-2xl font-black text-slate-950">Kategorien</h2>
+        <div class="mt-5 grid gap-3 text-sm font-bold text-cyan-800">
+          {categoryCards.map((link) => <a href={link.href} class="hover:text-violet-700">{link.title}</a>)}
+        </div>
+      </div>
+      <div>
+        <h2 class="text-2xl font-black text-slate-950">Ratgeber & Recht</h2>
+        <div class="mt-5 grid gap-3 text-sm font-bold text-cyan-800">
+          <a href="/ratgeber/" class="hover:text-violet-700">Ratgeber-Übersicht</a>
+          {guides.map((guide) => <a href={guide.href} class="hover:text-violet-700">{guide.title}</a>)}
+          {legalLinks.map((link) => <a href={link.href} class="hover:text-violet-700">{link.title}</a>)}
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

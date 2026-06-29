@@ -1,0 +1,116 @@
+---
+import "../../styles/global.css";
+import { navItems, site } from "@data/site";
+
+type Props = {
+  title: string;
+  description: string;
+  canonical?: string;
+  bodyClass?: string;
+};
+
+const { title, description, canonical, bodyClass = "" } = Astro.props;
+const pageTitle = title.includes(site.name) ? title : `${title} | ${site.name}`;
+const canonicalUrl = canonical ?? new URL(Astro.url.pathname, site.url).toString();
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:site_name" content={site.name} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#08111f" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body class={bodyClass}>
+    <header class="dark-section sticky top-0 z-50 border-b border-white/10 bg-[#08111f]/82 backdrop-blur-xl">
+      <div class="page-shell flex min-h-16 items-center justify-between gap-5 py-3">
+        <a href="/" class="group flex items-center gap-3" aria-label="KlangFinder Startseite">
+          <span class="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-electric to-pulse text-sm font-black text-white shadow-glow">
+            KF
+          </span>
+          <span class="leading-tight">
+            <span class="block text-base font-black tracking-normal text-white">{site.name}</span>
+            <span class="hidden text-xs font-medium text-slate-400 sm:block">Audio-Kaufberatung</span>
+          </span>
+        </a>
+        <nav aria-label="Hauptnavigation" class="hidden items-center gap-1 lg:flex">
+          {
+            navItems.map((item) => (
+              <a
+                href={item.href}
+                class="rounded-full px-4 py-2 text-sm font-semibold text-slate-200 transition hover:bg-white/10 hover:text-white"
+              >
+                {item.label}
+              </a>
+            ))
+          }
+        </nav>
+        <a
+          href="/ratgeber/welche-kopfhoerer-passen-zu-mir/"
+          class="hidden rounded-full bg-white px-4 py-2 text-sm font800 font-bold text-ink shadow-glow transition hover:-translate-y-0.5 hover:bg-cyan-100 md:inline-flex"
+        >
+          Kaufberatung
+        </a>
+      </div>
+      <nav aria-label="Mobile Navigation" class="page-shell flex gap-2 overflow-x-auto pb-3 lg:hidden">
+        {
+          navItems.map((item) => (
+            <a
+              href={item.href}
+              class="shrink-0 rounded-full border border-white/10 px-3 py-2 text-sm font-semibold text-slate-200"
+            >
+              {item.label}
+            </a>
+          ))
+        }
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="dark-section bg-[#08111f] py-12">
+      <div class="page-shell grid gap-8 border-t border-white/10 pt-9 md:grid-cols-[1.2fr_1fr_1fr]">
+        <div>
+          <div class="flex items-center gap-3">
+            <span class="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-electric to-pulse text-sm font-black text-white">
+              KF
+            </span>
+            <span class="text-lg font-black">{site.name}</span>
+          </div>
+          <p class="mt-4 max-w-md text-sm leading-6 text-slate-400">
+            Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.
+          </p>
+        </div>
+        <div>
+          <h2 class="text-sm font-bold uppercase tracking-[0.18em] text-cyan-200">Navigation</h2>
+          <div class="mt-4 grid gap-2 text-sm text-slate-300">
+            <a href="/kopfhoerer/" class="hover:text-white">Kopfhörer</a>
+            <a href="/bluetooth-lautsprecher/" class="hover:text-white">Bluetooth-Lautsprecher</a>
+            <a href="/gaming-headsets/" class="hover:text-white">Gaming-Headsets</a>
+            <a href="/ratgeber/" class="hover:text-white">Ratgeber</a>
+          </div>
+        </div>
+        <div>
+          <h2 class="text-sm font-bold uppercase tracking-[0.18em] text-cyan-200">Rechtliches</h2>
+          <div class="mt-4 grid gap-2 text-sm text-slate-300">
+            <a href="/impressum/" class="hover:text-white">Impressum</a>
+            <a href="/datenschutz/" class="hover:text-white">Datenschutz</a>
+            <a href="/affiliate-hinweis/" class="hover:text-white">Affiliate-Hinweis</a>
+            <a href="/sitemap/" class="hover:text-white">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

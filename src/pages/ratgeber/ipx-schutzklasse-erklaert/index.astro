@@ -1,0 +1,47 @@
+---
+import BaseLayout from "@components/Layout/BaseLayout.astro";
+import AffiliateNotice from "@components/AffiliateNotice.astro";
+---
+
+<BaseLayout
+  title="IPX-Schutzklasse erklärt"
+  description="Was IPX4, IPX5, IPX7 und IP67 bei Kopfhörern und Bluetooth-Lautsprechern bedeuten und wo die Grenzen liegen."
+>
+  <section class="dark-section py-14 sm:py-20">
+    <div class="page-shell max-w-4xl">
+      <p class="inline-flex rounded-full border border-cyan-300/30 bg-cyan-300/10 px-4 py-2 text-sm font-bold text-cyan-100">Robustheit</p>
+      <h1 class="mt-6 text-4xl font-black leading-tight text-white sm:text-5xl">IPX-Schutzklassen bei Audio-Geräten erklärt</h1>
+      <p class="mt-5 text-lg leading-8 text-slate-300">
+        IPX-Angaben sagen, wie gut ein Gerät gegen Wasser geschützt ist. Sie sagen aber nicht automatisch, dass jedes Szenario unproblematisch ist.
+      </p>
+      <div class="mt-8"><AffiliateNotice /></div>
+    </div>
+  </section>
+  <article class="light-section bg-white py-12 sm:py-16">
+    <div class="page-shell content-prose max-w-3xl">
+      <h2>Was bedeutet IPX?</h2>
+      <p>
+        Das X steht dafür, dass keine Staubschutzklasse angegeben ist. Die Zahl danach beschreibt den Wasserschutz. IPX4 bedeutet Schutz gegen Spritzwasser, IPX7 gegen zeitweiliges Untertauchen unter definierten Bedingungen. Wenn zwei Zahlen angegeben sind, etwa IP67, steht die erste für Staub und die zweite für Wasser.
+      </p>
+      <h2>IPX4, IPX5, IPX7 und IP67 im Alltag</h2>
+      <ul>
+        <li>IPX4: geeignet gegen Schweiß und Spritzwasser, praktisch für Sportkopfhörer.</li>
+        <li>IPX5: Schutz gegen Strahlwasser, sinnvoll für robustere Outdoor-Geräte.</li>
+        <li>IPX7: zeitweiliges Untertauchen, gut für Poolnähe und starke Regenschauer.</li>
+        <li>IP67: staubdicht und gegen zeitweiliges Untertauchen geschützt.</li>
+      </ul>
+      <h2>Salz, Chlor und Seife sind eigene Themen</h2>
+      <p>
+        IP-Schutz wird unter Laborbedingungen geprüft. Salzwasser, Chlor, Shampoo oder Staub-Schlamm-Mischungen können Dichtungen stärker belasten. Nach Kontakt mit problematischen Flüssigkeiten ist vorsichtiges Abspülen mit klarem Wasser nur dann sinnvoll, wenn der Hersteller es erlaubt.
+      </p>
+      <h2>Ladeanschlüsse trocken halten</h2>
+      <p>
+        Selbst wasserfeste Geräte sollten nicht nass geladen werden. Vor dem Laden sollte der Anschluss trocken sein. Bei Kopfhörern gilt außerdem: Das Case ist oft weniger gut geschützt als die Earbuds selbst.
+      </p>
+      <h2>Kaufentscheidung</h2>
+      <p>
+        Für Fitness reichen häufig IPX4 oder IPX5. Für Strand, Camping und Pool ist IP67 bei Lautsprechern beruhigender. Für Kinder, Reisen und Bad-Nutzung ist Robustheit wichtiger als ein besonders dünnes Gehäuse.
+      </p>
+    </div>
+  </article>
+</BaseLayout>
