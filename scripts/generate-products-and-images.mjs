@@ -797,140 +797,255 @@ const escapeXml = (value) =>
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;");
 
+const hashOf = (value) =>
+  [...value].reduce((acc, char) => (acc * 31 + char.charCodeAt(0)) % 9973, 7);
+
+const meshDots = (x0, y0, cols, rows, gap, color, opacity = 0.18) =>
+  Array.from({ length: rows }, (_, row) =>
+    Array.from(
+      { length: cols },
+      (_, col) =>
+        `<circle cx="${x0 + col * gap}" cy="${y0 + row * gap}" r="${row % 2 ? 2.1 : 1.7}" fill="${color}" opacity="${opacity + ((row + col) % 3) * 0.03}"/>`,
+    ).join(""),
+  ).join("");
+
 const bg = (product, [a, b, c]) => `
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0%" stop-color="${c}"/>
-      <stop offset="46%" stop-color="#172033"/>
-      <stop offset="100%" stop-color="#eff6ff"/>
+      <stop offset="0%" stop-color="#07111f"/>
+      <stop offset="52%" stop-color="${c}"/>
+      <stop offset="100%" stop-color="#e8eef7"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="45%" stop-color="#223047"/>
+      <stop offset="100%" stop-color="#dbe6f0"/>
     </linearGradient>
     <radialGradient id="halo" cx="50%" cy="35%" r="55%">
-      <stop offset="0%" stop-color="${a}" stop-opacity="0.75"/>
-      <stop offset="58%" stop-color="${b}" stop-opacity="0.18"/>
+      <stop offset="0%" stop-color="${a}" stop-opacity="0.68"/>
+      <stop offset="58%" stop-color="${b}" stop-opacity="0.2"/>
       <stop offset="100%" stop-color="${b}" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="body" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0%" stop-color="#f8fbff"/>
-      <stop offset="44%" stop-color="${a}"/>
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="14%" stop-color="#f3f7fb"/>
+      <stop offset="48%" stop-color="${a}"/>
       <stop offset="100%" stop-color="${b}"/>
     </linearGradient>
     <linearGradient id="darkBody" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0%" stop-color="#273247"/>
-      <stop offset="100%" stop-color="#060b14"/>
+      <stop offset="0%" stop-color="#3a465a"/>
+      <stop offset="42%" stop-color="#141d2d"/>
+      <stop offset="100%" stop-color="#04070d"/>
+    </linearGradient>
+    <linearGradient id="rubber" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#374151"/>
+      <stop offset="48%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+    <linearGradient id="cushion" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="40%" stop-color="#1f2937"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="36%" stop-color="#b6c2d1"/>
+      <stop offset="66%" stop-color="#5b6b80"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.88"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
     <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
-      <feDropShadow dx="0" dy="34" stdDeviation="28" flood-color="#020617" flood-opacity="0.38"/>
+      <feDropShadow dx="0" dy="32" stdDeviation="24" flood-color="#020617" flood-opacity="0.45"/>
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#ffffff" flood-opacity="0.08"/>
     </filter>
     <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="18"/>
     </filter>
+    <filter id="texture" x="-8%" y="-8%" width="116%" height="116%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="2" seed="${hashOf(product.id)}" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.12"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" mode="soft-light"/>
+    </filter>
+    <pattern id="fineMesh" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M0 14H28M14 0V28" stroke="#e2e8f0" stroke-width="1.2" opacity="0.12"/>
+      <circle cx="14" cy="14" r="1.7" fill="#e2e8f0" opacity="0.2"/>
+    </pattern>
   </defs>
   <rect width="1200" height="900" rx="58" fill="url(#bg)"/>
-  <circle cx="340" cy="150" r="250" fill="url(#halo)"/>
-  <circle cx="920" cy="220" r="260" fill="${a}" opacity="0.18" filter="url(#soft)"/>
-  <ellipse cx="600" cy="764" rx="365" ry="66" fill="#020617" opacity="0.28" filter="url(#soft)"/>
+  <circle cx="315" cy="150" r="278" fill="url(#halo)"/>
+  <circle cx="925" cy="218" r="246" fill="${a}" opacity="0.14" filter="url(#soft)"/>
+  <path d="M0 635 C210 590 392 585 596 636 C815 690 1004 682 1200 628 V900 H0 Z" fill="url(#floor)" opacity="0.92"/>
+  <path d="M95 675 C358 625 828 632 1098 684" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.16"/>
+  <ellipse cx="600" cy="752" rx="380" ry="70" fill="#020617" opacity="0.32" filter="url(#soft)"/>
 `;
 
-const overearSvg = ([a, b]) => `
-  <g filter="url(#shadow)" transform="translate(0 12)">
-    <path d="M344 486 C344 235 856 235 856 486" fill="none" stroke="url(#darkBody)" stroke-width="82" stroke-linecap="round"/>
-    <path d="M386 466 C386 286 814 286 814 466" fill="none" stroke="${a}" stroke-width="22" stroke-linecap="round" opacity="0.75"/>
-    <rect x="235" y="424" width="235" height="305" rx="88" fill="url(#darkBody)"/>
-    <rect x="730" y="424" width="235" height="305" rx="88" fill="url(#darkBody)"/>
-    <rect x="280" y="475" width="145" height="202" rx="54" fill="url(#body)"/>
-    <rect x="775" y="475" width="145" height="202" rx="54" fill="url(#body)"/>
-    <path d="M472 530 C548 567 652 567 728 530" stroke="${b}" stroke-width="18" stroke-linecap="round" opacity="0.55"/>
+const overearSvg = (item, [a, b]) => {
+  const tilt = (hashOf(item.id) % 9) - 4;
+  return `
+  <g filter="url(#shadow)" transform="rotate(${tilt} 600 520) translate(0 4)">
+    <path d="M337 492 C337 198 863 198 863 492" fill="none" stroke="url(#rubber)" stroke-width="96" stroke-linecap="round"/>
+    <path d="M382 466 C402 280 798 280 818 466" fill="none" stroke="url(#metal)" stroke-width="30" stroke-linecap="round" opacity="0.92"/>
+    <path d="M416 432 C470 314 730 314 784 432" fill="none" stroke="${a}" stroke-width="10" stroke-linecap="round" opacity="0.7"/>
+    <rect x="214" y="408" width="260" height="330" rx="96" fill="url(#rubber)" filter="url(#texture)"/>
+    <rect x="726" y="408" width="260" height="330" rx="96" fill="url(#rubber)" filter="url(#texture)"/>
+    <rect x="258" y="452" width="172" height="242" rx="62" fill="url(#cushion)"/>
+    <rect x="770" y="452" width="172" height="242" rx="62" fill="url(#cushion)"/>
+    <rect x="292" y="486" width="104" height="172" rx="42" fill="url(#body)" opacity="0.96"/>
+    <rect x="804" y="486" width="104" height="172" rx="42" fill="url(#body)" opacity="0.96"/>
+    <path d="M300 482 C334 462 374 462 410 488" fill="none" stroke="url(#glass)" stroke-width="14" stroke-linecap="round"/>
+    <path d="M812 482 C846 462 886 462 922 488" fill="none" stroke="url(#glass)" stroke-width="14" stroke-linecap="round"/>
+    <path d="M458 548 C532 586 668 586 742 548" stroke="${b}" stroke-width="14" stroke-linecap="round" opacity="0.5"/>
   </g>
 `;
+};
 
-const headsetSvg = ([a, b]) => `
-  <g filter="url(#shadow)" transform="translate(0 10)">
-    <path d="M330 486 C330 230 870 230 870 486" fill="none" stroke="url(#darkBody)" stroke-width="78" stroke-linecap="round"/>
-    <path d="M378 450 C410 304 790 304 822 450" fill="none" stroke="${a}" stroke-width="16" stroke-linecap="round"/>
-    <rect x="214" y="430" width="238" height="306" rx="74" fill="url(#darkBody)"/>
-    <rect x="748" y="430" width="238" height="306" rx="74" fill="url(#darkBody)"/>
-    <rect x="263" y="485" width="140" height="196" rx="48" fill="url(#body)"/>
-    <rect x="797" y="485" width="140" height="196" rx="48" fill="url(#body)"/>
-    <path d="M868 636 C940 656 998 690 1030 744" fill="none" stroke="${b}" stroke-width="22" stroke-linecap="round"/>
-    <circle cx="1040" cy="763" r="28" fill="${a}"/>
+const headsetSvg = (item, [a, b]) => {
+  const tilt = (hashOf(item.id) % 7) - 3;
+  return `
+  <g filter="url(#shadow)" transform="rotate(${tilt} 600 520) translate(0 8)">
+    <path d="M322 490 C322 210 878 210 878 490" fill="none" stroke="url(#rubber)" stroke-width="88" stroke-linecap="round"/>
+    <path d="M380 458 C415 306 785 306 820 458" fill="none" stroke="${a}" stroke-width="18" stroke-linecap="round" opacity="0.82"/>
+    <rect x="206" y="424" width="258" height="322" rx="78" fill="url(#rubber)" filter="url(#texture)"/>
+    <rect x="736" y="424" width="258" height="322" rx="78" fill="url(#rubber)" filter="url(#texture)"/>
+    <rect x="260" y="482" width="150" height="204" rx="52" fill="url(#cushion)"/>
+    <rect x="790" y="482" width="150" height="204" rx="52" fill="url(#cushion)"/>
+    <rect x="286" y="512" width="98" height="144" rx="40" fill="url(#body)"/>
+    <rect x="816" y="512" width="98" height="144" rx="40" fill="url(#body)"/>
+    <path d="M865 638 C930 650 1004 687 1046 744" fill="none" stroke="url(#metal)" stroke-width="24" stroke-linecap="round"/>
+    <path d="M872 638 C938 657 997 688 1026 728" fill="none" stroke="${b}" stroke-width="8" stroke-linecap="round" opacity="0.78"/>
+    <rect x="1018" y="724" width="88" height="46" rx="23" fill="url(#rubber)" transform="rotate(20 1062 747)"/>
+    <circle cx="1047" cy="747" r="13" fill="${a}" opacity="0.85"/>
   </g>
 `;
+};
 
-const earbudsSvg = ([a, b]) => `
-  <g filter="url(#shadow)">
-    <rect x="315" y="472" width="570" height="236" rx="118" fill="url(#darkBody)"/>
-    <rect x="360" y="512" width="480" height="150" rx="75" fill="url(#body)" opacity="0.88"/>
-    <path d="M455 376 C408 405 391 470 420 518 C445 559 512 553 530 507 C554 446 513 397 455 376Z" fill="url(#body)"/>
-    <path d="M745 376 C792 405 809 470 780 518 C755 559 688 553 670 507 C646 446 687 397 745 376Z" fill="url(#body)"/>
-    <rect x="502" y="486" width="54" height="140" rx="27" fill="${b}" opacity="0.72"/>
-    <rect x="644" y="486" width="54" height="140" rx="27" fill="${b}" opacity="0.72"/>
-    <circle cx="462" cy="455" r="48" fill="#f8fbff" opacity="0.92"/>
-    <circle cx="738" cy="455" r="48" fill="#f8fbff" opacity="0.92"/>
+const earbudsSvg = (item, [a, b]) => {
+  const tilt = (hashOf(item.id) % 8) - 4;
+  return `
+  <g filter="url(#shadow)" transform="rotate(${tilt} 600 570)">
+    <rect x="282" y="478" width="636" height="232" rx="112" fill="url(#rubber)" filter="url(#texture)"/>
+    <path d="M320 555 C380 498 820 498 880 555" fill="none" stroke="#f8fafc" stroke-width="7" opacity="0.22"/>
+    <rect x="344" y="526" width="512" height="126" rx="63" fill="url(#body)" opacity="0.9"/>
+    <path d="M455 344 C399 373 382 454 419 515 C451 566 525 546 543 488 C561 431 518 362 455 344Z" fill="url(#body)"/>
+    <path d="M745 344 C801 373 818 454 781 515 C749 566 675 546 657 488 C639 431 682 362 745 344Z" fill="url(#body)"/>
+    <ellipse cx="455" cy="451" rx="54" ry="64" fill="url(#rubber)" opacity="0.88"/>
+    <ellipse cx="745" cy="451" rx="54" ry="64" fill="url(#rubber)" opacity="0.88"/>
+    <circle cx="454" cy="434" r="32" fill="#f8fafc" opacity="0.92"/>
+    <circle cx="746" cy="434" r="32" fill="#f8fafc" opacity="0.92"/>
+    <path d="M501 505 C526 545 525 594 506 626" fill="none" stroke="${b}" stroke-width="42" stroke-linecap="round" opacity="0.82"/>
+    <path d="M699 505 C674 545 675 594 694 626" fill="none" stroke="${b}" stroke-width="42" stroke-linecap="round" opacity="0.82"/>
+    <rect x="430" y="332" width="68" height="160" rx="34" fill="url(#glass)" opacity="0.28"/>
+    <rect x="702" y="332" width="68" height="160" rx="34" fill="url(#glass)" opacity="0.28"/>
+    <circle cx="600" cy="592" r="10" fill="${a}" opacity="0.8"/>
   </g>
 `;
+};
 
-const openearSvg = ([a, b]) => `
-  <g filter="url(#shadow)" transform="translate(0 16)">
-    <path d="M338 512 C380 340 522 340 550 492" fill="none" stroke="url(#darkBody)" stroke-width="52" stroke-linecap="round"/>
-    <path d="M862 512 C820 340 678 340 650 492" fill="none" stroke="url(#darkBody)" stroke-width="52" stroke-linecap="round"/>
-    <path d="M420 566 C500 618 700 618 780 566" fill="none" stroke="${a}" stroke-width="26" stroke-linecap="round"/>
-    <ellipse cx="524" cy="525" rx="98" ry="124" fill="url(#body)"/>
-    <ellipse cx="676" cy="525" rx="98" ry="124" fill="url(#body)"/>
-    <circle cx="524" cy="525" r="44" fill="${b}" opacity="0.72"/>
-    <circle cx="676" cy="525" r="44" fill="${b}" opacity="0.72"/>
+const openearSvg = (item, [a, b]) => {
+  const tilt = (hashOf(item.id) % 9) - 4;
+  return `
+  <g filter="url(#shadow)" transform="rotate(${tilt} 600 540) translate(0 12)">
+    <path d="M342 514 C374 322 526 318 560 486" fill="none" stroke="url(#rubber)" stroke-width="54" stroke-linecap="round"/>
+    <path d="M858 514 C826 322 674 318 640 486" fill="none" stroke="url(#rubber)" stroke-width="54" stroke-linecap="round"/>
+    <path d="M392 567 C486 650 714 650 808 567" fill="none" stroke="url(#metal)" stroke-width="30" stroke-linecap="round"/>
+    <path d="M426 568 C510 618 690 618 774 568" fill="none" stroke="${a}" stroke-width="12" stroke-linecap="round" opacity="0.82"/>
+    <ellipse cx="520" cy="526" rx="104" ry="126" fill="url(#body)" filter="url(#texture)"/>
+    <ellipse cx="680" cy="526" rx="104" ry="126" fill="url(#body)" filter="url(#texture)"/>
+    <ellipse cx="520" cy="526" rx="52" ry="64" fill="url(#rubber)" opacity="0.92"/>
+    <ellipse cx="680" cy="526" rx="52" ry="64" fill="url(#rubber)" opacity="0.92"/>
+    <circle cx="520" cy="515" r="22" fill="${b}" opacity="0.82"/>
+    <circle cx="680" cy="515" r="22" fill="${b}" opacity="0.82"/>
   </g>
 `;
+};
 
-const speakerSvg = ([a, b]) => `
-  <g filter="url(#shadow)" transform="translate(0 8)">
-    <rect x="224" y="350" width="752" height="330" rx="118" fill="url(#darkBody)"/>
-    <rect x="280" y="405" width="640" height="220" rx="84" fill="#142033"/>
-    <g opacity="0.9">
-      ${Array.from({ length: 13 }, (_, i) => `<line x1="${328 + i * 45}" y1="424" x2="${328 + i * 45}" y2="606" stroke="${a}" stroke-width="8" stroke-linecap="round" opacity="${0.28 + (i % 3) * 0.14}"/>`).join("")}
-    </g>
-    <circle cx="404" cy="515" r="74" fill="url(#body)"/>
-    <circle cx="796" cy="515" r="74" fill="url(#body)"/>
-    <circle cx="404" cy="515" r="38" fill="${b}" opacity="0.85"/>
-    <circle cx="796" cy="515" r="38" fill="${b}" opacity="0.85"/>
-    <rect x="530" y="465" width="140" height="100" rx="50" fill="${a}" opacity="0.22"/>
+const speakerSvg = (item, [a, b]) => {
+  const tilt = (hashOf(item.id) % 7) - 3;
+  const compact = item.collections.includes("mini-lautsprecher");
+  const width = compact ? 620 : 760;
+  const x = (1200 - width) / 2;
+  return `
+  <g filter="url(#shadow)" transform="rotate(${tilt} 600 552) translate(0 8)">
+    <rect x="${x}" y="${compact ? 384 : 342}" width="${width}" height="${compact ? 290 : 350}" rx="${compact ? 92 : 116}" fill="url(#rubber)" filter="url(#texture)"/>
+    <rect x="${x + 52}" y="${compact ? 432 : 400}" width="${width - 104}" height="${compact ? 178 : 230}" rx="${compact ? 62 : 86}" fill="#111827"/>
+    <rect x="${x + 52}" y="${compact ? 432 : 400}" width="${width - 104}" height="${compact ? 178 : 230}" rx="${compact ? 62 : 86}" fill="url(#fineMesh)"/>
+    <g opacity="0.86">${meshDots(x + 86, compact ? 462 : 435, compact ? 15 : 18, compact ? 5 : 7, 31, a, 0.16)}</g>
+    <circle cx="${x + width * 0.25}" cy="${compact ? 520 : 515}" r="${compact ? 58 : 78}" fill="url(#body)"/>
+    <circle cx="${x + width * 0.75}" cy="${compact ? 520 : 515}" r="${compact ? 58 : 78}" fill="url(#body)"/>
+    <circle cx="${x + width * 0.25}" cy="${compact ? 520 : 515}" r="${compact ? 28 : 39}" fill="${b}" opacity="0.84"/>
+    <circle cx="${x + width * 0.75}" cy="${compact ? 520 : 515}" r="${compact ? 28 : 39}" fill="${b}" opacity="0.84"/>
+    <rect x="532" y="${compact ? 472 : 466}" width="136" height="${compact ? 82 : 104}" rx="41" fill="${a}" opacity="0.18"/>
+    <path d="M${x + 85} ${compact ? 406 : 366} H${x + width - 85}" stroke="url(#glass)" stroke-width="18" stroke-linecap="round" opacity="0.33"/>
+    <circle cx="548" cy="${compact ? 396 : 360}" r="12" fill="#e5e7eb" opacity="0.55"/>
+    <circle cx="600" cy="${compact ? 396 : 360}" r="12" fill="#e5e7eb" opacity="0.55"/>
+    <circle cx="652" cy="${compact ? 396 : 360}" r="12" fill="#e5e7eb" opacity="0.55"/>
   </g>
 `;
+};
 
-const partySvg = ([a, b]) => `
-  <g filter="url(#shadow)" transform="translate(0 8)">
-    <rect x="385" y="205" width="430" height="560" rx="86" fill="url(#darkBody)"/>
-    <rect x="438" y="260" width="324" height="450" rx="56" fill="#121c2d"/>
-    <circle cx="600" cy="404" r="118" fill="url(#body)"/>
-    <circle cx="600" cy="404" r="58" fill="${b}" opacity="0.82"/>
-    <circle cx="600" cy="604" r="96" fill="url(#body)"/>
-    <circle cx="600" cy="604" r="44" fill="${b}" opacity="0.82"/>
-    <path d="M462 314 H738" stroke="${a}" stroke-width="16" stroke-linecap="round" opacity="0.86"/>
-    <path d="M462 734 H738" stroke="${a}" stroke-width="16" stroke-linecap="round" opacity="0.6"/>
-    <circle cx="473" cy="404" r="18" fill="${a}"/>
-    <circle cx="727" cy="604" r="18" fill="${a}"/>
+const partySvg = (item, [a, b]) => {
+  const tilt = (hashOf(item.id) % 5) - 2;
+  return `
+  <g filter="url(#shadow)" transform="rotate(${tilt} 600 520) translate(0 4)">
+    <rect x="376" y="184" width="448" height="590" rx="90" fill="url(#rubber)" filter="url(#texture)"/>
+    <rect x="432" y="244" width="336" height="470" rx="58" fill="#101827"/>
+    <rect x="432" y="244" width="336" height="470" rx="58" fill="url(#fineMesh)" opacity="0.9"/>
+    <circle cx="600" cy="397" r="126" fill="url(#body)"/>
+    <circle cx="600" cy="397" r="84" fill="#0b1120"/>
+    <circle cx="600" cy="397" r="48" fill="${b}" opacity="0.88"/>
+    <circle cx="600" cy="614" r="102" fill="url(#body)"/>
+    <circle cx="600" cy="614" r="68" fill="#0b1120"/>
+    <circle cx="600" cy="614" r="38" fill="${b}" opacity="0.88"/>
+    <circle cx="600" cy="397" r="142" fill="none" stroke="${a}" stroke-width="10" opacity="0.65"/>
+    <circle cx="600" cy="614" r="116" fill="none" stroke="${a}" stroke-width="9" opacity="0.52"/>
+    <path d="M462 304 H738" stroke="url(#metal)" stroke-width="18" stroke-linecap="round"/>
+    <path d="M466 734 H734" stroke="${a}" stroke-width="16" stroke-linecap="round" opacity="0.65"/>
+    <circle cx="472" cy="398" r="17" fill="${a}" opacity="0.95"/>
+    <circle cx="728" cy="612" r="17" fill="${a}" opacity="0.9"/>
+    <path d="M430 215 C470 196 730 196 770 215" fill="none" stroke="url(#glass)" stroke-width="16" stroke-linecap="round" opacity="0.32"/>
   </g>
 `;
+};
 
 const svgFor = (item) => {
   const palette = tones[item.tone] ?? tones.blue;
+  const scale =
+    item.kind === "party"
+      ? 1.08
+      : item.kind === "speaker"
+        ? 1.2
+        : item.kind === "earbuds"
+          ? 1.23
+          : item.kind === "openear"
+            ? 1.16
+            : 1.1;
   const shape =
     item.kind === "overear"
-      ? overearSvg(palette)
+      ? overearSvg(item, palette)
       : item.kind === "headset"
-        ? headsetSvg(palette)
+        ? headsetSvg(item, palette)
         : item.kind === "earbuds"
-          ? earbudsSvg(palette)
+          ? earbudsSvg(item, palette)
           : item.kind === "openear"
-            ? openearSvg(palette)
+            ? openearSvg(item, palette)
             : item.kind === "party"
-              ? partySvg(palette)
-              : speakerSvg(palette);
+              ? partySvg(item, palette)
+              : speakerSvg(item, palette);
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
   <title id="title">${escapeXml(item.title)}</title>
-  <desc id="desc">Eigene Produktvisualisierung fuer KlangFinder, keine Hersteller- oder Amazon-Grafik.</desc>
+  <desc id="desc">Eigene realistische Studio-Produktvisualisierung fuer KlangFinder, keine Hersteller- oder Amazon-Grafik.</desc>
   ${bg(item, palette)}
-  ${shape}
+  <g transform="translate(600 535) scale(${scale}) translate(-600 -535)">
+    ${shape}
+  </g>
 </svg>
 `;
 };
