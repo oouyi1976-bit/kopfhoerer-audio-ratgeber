@@ -7,14 +7,15 @@ const staticPages = [
   "/impressum/",
   "/datenschutz/",
   "/affiliate-hinweis/",
+  "/ki-musik-creator-tools/",
   "/sitemap/",
 ];
 
-const urls = [
+const urls = Array.from(new Set([
   ...staticPages,
   ...Object.values(productPages).map((page) => page.href),
   ...guides.map((guide) => guide.href),
-];
+]));
 
 const xmlEscape = (value: string) =>
   value

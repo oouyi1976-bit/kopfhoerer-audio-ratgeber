@@ -3,7 +3,7 @@ export const site = {
   tagline: "Kopfhörer, Headsets und Bluetooth-Lautsprecher clever auswählen.",
   url: "https://klangfinder.de",
   amazonNotice:
-    "Diese Seite enthält Affiliate-Links. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.",
+    "Diese Seite enthält Affiliate-Links. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Außerdem können auf dieser Seite Digistore24-Partnerlinks enthalten sein.",
 };
 
 export const navItems = [
@@ -11,6 +11,7 @@ export const navItems = [
   { label: "Kopfhörer", href: "/kopfhoerer/" },
   { label: "Bluetooth-Lautsprecher", href: "/bluetooth-lautsprecher/" },
   { label: "Gaming", href: "/gaming-headsets/" },
+  { label: "Creator-Tools", href: "/ki-musik-creator-tools/" },
   { label: "Ratgeber", href: "/ratgeber/" },
 ];
 
@@ -78,6 +79,14 @@ export const categoryCards = [
     label: "Laut",
     collection: "party-lautsprecher",
     image: "/audio-product-images/category-party.webp",
+  },
+  {
+    title: "KI-Musik & Creator-Tools",
+    description: "Digitale Kurse und Tools für KI-Musik, Videos und Content-Workflows.",
+    href: "/ki-musik-creator-tools/",
+    label: "Digital",
+    collection: "ki-musik-creator-tools",
+    image: "/creator-offer-images/category-ki-musik-creator-tools.webp",
   },
 ];
 
@@ -211,5 +220,12 @@ export const guides = [
     href: "/ratgeber/ipx-schutzklasse-erklaert/",
     topic: "Robustheit",
     image: "/audio-product-images/guide-ipx.webp",
+  },
+  {
+    title: "KI-Musik & Creator-Tools",
+    description: "Digitale Angebote für Musikproduktion, Musikvideos und Creator-Workflows mit KI.",
+    href: "/ki-musik-creator-tools/",
+    topic: "Creator",
+    image: "/creator-offer-images/category-ki-musik-creator-tools.webp",
   },
 ];

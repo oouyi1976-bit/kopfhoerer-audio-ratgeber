@@ -36,7 +36,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0C4TLFZSZ?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0C4TLFZSZ",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "in-ear-kopfhoerer",
@@ -61,7 +61,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0DZ6Z6T1C?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0DZ6Z6T1C",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "in-ear-kopfhoerer",
@@ -86,7 +86,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0CB6DZX79?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0CB6DZX79",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "in-ear-kopfhoerer",
@@ -112,7 +112,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0D44H2RG3?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0D44H2RG3",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "in-ear-kopfhoerer",
@@ -137,7 +137,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
-    "buttonText": "Amazon-Link folgt",
+    "buttonText": "Link folgt",
     "collections": [
       "kopfhoerer",
       "in-ear-kopfhoerer",
@@ -162,7 +162,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
-    "buttonText": "Amazon-Link folgt",
+    "buttonText": "Link folgt",
     "collections": [
       "kopfhoerer",
       "in-ear-kopfhoerer"
@@ -186,7 +186,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
-    "buttonText": "Amazon-Link folgt",
+    "buttonText": "Link folgt",
     "collections": [
       "kopfhoerer",
       "in-ear-kopfhoerer",
@@ -211,7 +211,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
-    "buttonText": "Amazon-Link folgt",
+    "buttonText": "Link folgt",
     "collections": [
       "kopfhoerer",
       "in-ear-kopfhoerer",
@@ -236,7 +236,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
-    "buttonText": "Amazon-Link folgt",
+    "buttonText": "Link folgt",
     "collections": [
       "kopfhoerer",
       "in-ear-kopfhoerer",
@@ -262,7 +262,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0D2HKCMBP?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0D2HKCMBP",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "sportkopfhoerer"
@@ -286,7 +286,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
-    "buttonText": "Amazon-Link folgt",
+    "buttonText": "Link folgt",
     "collections": [
       "kopfhoerer",
       "in-ear-kopfhoerer",
@@ -311,7 +311,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
-    "buttonText": "Amazon-Link folgt",
+    "buttonText": "Link folgt",
     "collections": [
       "kopfhoerer",
       "in-ear-kopfhoerer",
@@ -336,7 +336,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B09Y2MYL5C?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B09Y2MYL5C",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "over-ear-kopfhoerer",
@@ -361,7 +361,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B08C7KG5LP?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B08C7KG5LP",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "over-ear-kopfhoerer",
@@ -386,7 +386,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0CCRZPKR1?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0CCRZPKR1",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "over-ear-kopfhoerer",
@@ -411,7 +411,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B08HMWZBXC?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B08HMWZBXC",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "over-ear-kopfhoerer",
@@ -436,7 +436,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0CHMN4KVN?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0CHMN4KVN",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "over-ear-kopfhoerer",
@@ -461,7 +461,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0CX1TJXKV?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0CX1TJXKV",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "over-ear-kopfhoerer",
@@ -486,7 +486,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
-    "buttonText": "Amazon-Link folgt",
+    "buttonText": "Link folgt",
     "collections": [
       "kopfhoerer",
       "over-ear-kopfhoerer",
@@ -511,7 +511,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0C6KFZC9Z?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0C6KFZC9Z",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "over-ear-kopfhoerer",
@@ -536,7 +536,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0D1VN2VB7?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0D1VN2VB7",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "over-ear-kopfhoerer"
@@ -560,7 +560,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0CZPMXGSH?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0CZPMXGSH",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "over-ear-kopfhoerer"
@@ -584,7 +584,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B09BYFHL25?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B09BYFHL25",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "over-ear-kopfhoerer"
@@ -608,7 +608,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0016MNAAI?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0016MNAAI",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "over-ear-kopfhoerer"
@@ -632,7 +632,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
-    "buttonText": "Amazon-Link folgt",
+    "buttonText": "Link folgt",
     "collections": [
       "kopfhoerer",
       "over-ear-kopfhoerer",
@@ -657,7 +657,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0FS7JXWJG?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0FS7JXWJG",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "gaming-headsets"
@@ -681,7 +681,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0F844LMG3?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0F844LMG3",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "gaming-headsets"
@@ -705,7 +705,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0DBJ5PBLT?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0DBJ5PBLT",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "gaming-headsets"
@@ -729,7 +729,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0CBRTBSNV?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0CBRTBSNV",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "gaming-headsets"
@@ -753,7 +753,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0D5Z1C5TB?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0D5Z1C5TB",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "gaming-headsets"
@@ -777,7 +777,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
-    "buttonText": "Amazon-Link folgt",
+    "buttonText": "Link folgt",
     "collections": [
       "kopfhoerer",
       "gaming-headsets"
@@ -801,7 +801,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
-    "buttonText": "Amazon-Link folgt",
+    "buttonText": "Link folgt",
     "collections": [
       "kopfhoerer",
       "gaming-headsets"
@@ -825,7 +825,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0DHS72HR8?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0DHS72HR8",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "over-ear-kopfhoerer",
@@ -850,7 +850,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0D4ZNWLKL?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0D4ZNWLKL",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "over-ear-kopfhoerer"
@@ -874,7 +874,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B09313H1MS?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B09313H1MS",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "kopfhoerer",
       "over-ear-kopfhoerer"
@@ -898,7 +898,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B08VDNCZT9?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B08VDNCZT9",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "bluetooth-lautsprecher",
       "outdoor-lautsprecher"
@@ -922,7 +922,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B09HGRXXTM?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B09HGRXXTM",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "bluetooth-lautsprecher",
       "outdoor-lautsprecher",
@@ -947,7 +947,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
-    "buttonText": "Amazon-Link folgt",
+    "buttonText": "Link folgt",
     "collections": [
       "bluetooth-lautsprecher",
       "outdoor-lautsprecher",
@@ -972,7 +972,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0CCYFP62W?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0CCYFP62W",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "bluetooth-lautsprecher",
       "outdoor-lautsprecher",
@@ -997,7 +997,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0D6WD2QSQ?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0D6WD2QSQ",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "bluetooth-lautsprecher",
       "outdoor-lautsprecher"
@@ -1021,7 +1021,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0D3X3YKVF?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0D3X3YKVF",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "bluetooth-lautsprecher",
       "outdoor-lautsprecher",
@@ -1046,7 +1046,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0CGDL42CT?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0CGDL42CT",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "bluetooth-lautsprecher",
       "outdoor-lautsprecher"
@@ -1070,7 +1070,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B07P39MLKH?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B07P39MLKH",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "bluetooth-lautsprecher",
       "outdoor-lautsprecher"
@@ -1094,7 +1094,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0CQ53RVTW?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0CQ53RVTW",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "bluetooth-lautsprecher",
       "outdoor-lautsprecher",
@@ -1119,7 +1119,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0CZ7DY692?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0CZ7DY692",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "bluetooth-lautsprecher",
       "outdoor-lautsprecher",
@@ -1144,7 +1144,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0D3WLCJSJ?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0D3WLCJSJ",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "bluetooth-lautsprecher",
       "outdoor-lautsprecher"
@@ -1168,7 +1168,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0D3WMD9C4?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0D3WMD9C4",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "bluetooth-lautsprecher",
       "outdoor-lautsprecher",
@@ -1193,7 +1193,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0D1CSN1QR?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0D1CSN1QR",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "bluetooth-lautsprecher",
       "outdoor-lautsprecher"
@@ -1217,7 +1217,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0CX1WXP8M?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0CX1WXP8M",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "bluetooth-lautsprecher",
       "outdoor-lautsprecher",
@@ -1242,7 +1242,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0DZ76B7XQ?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0DZ76B7XQ",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "bluetooth-lautsprecher",
       "outdoor-lautsprecher"
@@ -1266,7 +1266,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
-    "buttonText": "Amazon-Link folgt",
+    "buttonText": "Link folgt",
     "collections": [
       "bluetooth-lautsprecher",
       "outdoor-lautsprecher"
@@ -1290,7 +1290,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
-    "buttonText": "Amazon-Link folgt",
+    "buttonText": "Link folgt",
     "collections": [
       "bluetooth-lautsprecher",
       "outdoor-lautsprecher",
@@ -1315,7 +1315,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
-    "buttonText": "Amazon-Link folgt",
+    "buttonText": "Link folgt",
     "collections": [
       "bluetooth-lautsprecher",
       "outdoor-lautsprecher",
@@ -1340,7 +1340,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
-    "buttonText": "Amazon-Link folgt",
+    "buttonText": "Link folgt",
     "collections": [
       "bluetooth-lautsprecher",
       "party-lautsprecher",
@@ -1365,7 +1365,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
-    "buttonText": "Amazon-Link folgt",
+    "buttonText": "Link folgt",
     "collections": [
       "bluetooth-lautsprecher",
       "outdoor-lautsprecher"
@@ -1389,7 +1389,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0CX97B418?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0CX97B418",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "bluetooth-lautsprecher",
       "outdoor-lautsprecher",
@@ -1414,7 +1414,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "https://www.amazon.de/dp/B0DJ1QNM1R?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0DJ1QNM1R",
-    "buttonText": "Bei Amazon ansehen",
+    "buttonText": "Zum Angebot",
     "collections": [
       "bluetooth-lautsprecher",
       "party-lautsprecher"
@@ -1438,7 +1438,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
-    "buttonText": "Amazon-Link folgt",
+    "buttonText": "Link folgt",
     "collections": [
       "bluetooth-lautsprecher",
       "party-lautsprecher"
@@ -1462,7 +1462,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
-    "buttonText": "Amazon-Link folgt",
+    "buttonText": "Link folgt",
     "collections": [
       "bluetooth-lautsprecher",
       "outdoor-lautsprecher",
@@ -1487,7 +1487,7 @@ export const audioProducts: AudioProduct[] = [
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
-    "buttonText": "Amazon-Link folgt",
+    "buttonText": "Link folgt",
     "collections": [
       "bluetooth-lautsprecher"
     ],

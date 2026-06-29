@@ -1,0 +1,37 @@
+---
+import type { CreatorOffer } from "@data/creatorOffers";
+
+type Props = {
+  offer: CreatorOffer;
+};
+
+const { offer } = Astro.props;
+const rel = "nofollow sponsored noopener noreferrer";
+---
+
+<article class="flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-card">
+  <a href={offer.affiliateUrl} target="_blank" rel={rel} aria-label={`${offer.title} öffnen`} class="block aspect-[4/3] bg-slate-100">
+    <img src={offer.image} alt={`${offer.title} Creator-Visualisierung`} class="h-full w-full object-cover" loading="lazy" />
+  </a>
+  <div class="flex flex-1 flex-col p-5">
+    <h3 class="text-xl font-black leading-tight text-slate-950">
+      <a href={offer.affiliateUrl} target="_blank" rel={rel} class="hover:text-violet-700">
+        {offer.title}
+      </a>
+    </h3>
+    <p class="mt-3 text-sm leading-6 text-slate-600">{offer.shortDescription}</p>
+    <ul class="mt-4 grid gap-2 text-sm leading-5 text-slate-700">
+      {offer.highlights.map((highlight) => <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-violet-500"></span>{highlight}</li>)}
+    </ul>
+    <div class="mt-auto pt-5">
+      <a
+        href={offer.affiliateUrl}
+        target="_blank"
+        rel={rel}
+        class="inline-flex w-full items-center justify-center rounded-xl bg-slate-950 px-4 py-3 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-violet-700"
+      >
+        {offer.buttonText}
+      </a>
+    </div>
+  </div>
+</article>

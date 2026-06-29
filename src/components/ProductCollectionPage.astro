@@ -1,9 +1,8 @@
 ---
-import AffiliateNotice from "./AffiliateNotice.astro";
 import ProductGrid from "./ProductGrid.astro";
 import GuideCard from "./GuideCard.astro";
 import { guides } from "@data/site";
-import { productsForCollection, readyProducts } from "@data/audioProducts";
+import { productsForCollection } from "@data/audioProducts";
 
 type Page = {
   eyebrow: string;
@@ -20,7 +19,6 @@ type Props = {
 
 const { page } = Astro.props;
 const products = productsForCollection(page.collection);
-const readyCount = products.filter((product) => product.affiliateStatus === "ready").length;
 const relatedGuides = guides.slice(0, 3);
 ---
 
@@ -33,9 +31,8 @@ const relatedGuides = guides.slice(0, 3);
     <p class="mt-5 max-w-3xl text-lg leading-8 text-slate-300">{page.description}</p>
     <div class="mt-8 grid gap-6 lg:grid-cols-[0.94fr_1.06fr] lg:items-end">
       <div>
-        <AffiliateNotice />
-        <div class="mt-4 rounded-2xl border border-white/10 bg-white/10 px-5 py-4 text-sm text-slate-200">
-          <strong class="text-white">{products.length}</strong> Produkte, <strong class="text-white">{readyCount}</strong> geprüfte Amazon-Links
+        <div class="rounded-2xl border border-white/10 bg-white/10 px-5 py-4 text-sm leading-6 text-slate-200">
+          Vergleiche beliebte Audio-Produkte und finde schneller das passende Zubehör für Musik, Gaming, Reisen oder Arbeit.
         </div>
       </div>
       <div class="overflow-hidden rounded-3xl border border-white/10 bg-white/10 shadow-glow">
@@ -54,9 +51,9 @@ const relatedGuides = guides.slice(0, 3);
         <div class="mt-6 rounded-2xl border border-slate-200 bg-white p-5 shadow-card">
           <h3 class="text-lg font-black text-slate-950">Schnellcheck</h3>
           <ul class="mt-4 grid gap-3 text-sm leading-6 text-slate-700">
-            <li>Keine Amazon-Preise, keine Sterne und keine erfundenen Testurteile.</li>
-            <li>Ready-Produkte verlinken Bild, Titel und Button auf dieselbe Amazon-ASIN.</li>
-            <li>Unsichere Produkte bleiben als Platzhalter sichtbar, aber ohne Amazon-Link.</li>
+            <li>Keine Preise, keine Sterne und keine erfundenen Testurteile.</li>
+            <li>Bild, Titel und Button führen bei verfügbaren Angeboten zum selben Ziel.</li>
+            <li>Die Auswahl bleibt nach Einsatzbereich sortiert und gut scanbar.</li>
           </ul>
         </div>
       </div>

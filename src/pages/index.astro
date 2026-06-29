@@ -1,7 +1,6 @@
 ---
 import BaseLayout from "@components/Layout/BaseLayout.astro";
 import Hero from "@components/Hero.astro";
-import AffiliateNotice from "@components/AffiliateNotice.astro";
 import CategoryCard from "@components/CategoryCard.astro";
 import ProductGrid from "@components/ProductGrid.astro";
 import GuideCard from "@components/GuideCard.astro";
@@ -23,18 +22,12 @@ const topProducts = topIds
 
 <BaseLayout
   title="Die besten Kopfhörer & Bluetooth-Lautsprecher für deinen Alltag"
-  description="KlangFinder hilft dir bei der Auswahl von Kopfhörern, Gaming-Headsets und Bluetooth-Lautsprechern mit ehrlichen Empfehlungen, Ratgebern und Amazon-Links."
+  description="KlangFinder hilft dir bei der Auswahl von Kopfhörern, Gaming-Headsets, Bluetooth-Lautsprechern und Creator-Tools mit übersichtlichen Empfehlungen und Ratgebern."
 >
   <Hero
     title="Die besten Kopfhörer & Bluetooth-Lautsprecher für deinen Alltag"
     subtitle="Moderne Kaufberatung für In-Ears, Over-Ears, Noise-Cancelling-Kopfhörer, Gaming-Headsets und portable Speaker. Ohne Fake-Tests, ohne Preise, ohne Sterne-Magie."
   />
-
-  <section class="dark-section pb-12">
-    <div class="page-shell">
-      <AffiliateNotice />
-    </div>
-  </section>
 
   <section class="light-section bg-[#f4f8fb] py-14 sm:py-18">
     <div class="page-shell">

@@ -29,7 +29,7 @@ const product = ({
   affiliateUrl: status === "ready" ? link(asin) : "",
   affiliateStatus: status,
   asin: status === "ready" ? asin : "",
-  buttonText: status === "ready" ? "Bei Amazon ansehen" : "Amazon-Link folgt",
+  buttonText: status === "ready" ? "Zum Angebot" : "Link folgt",
   collections,
   kind,
   tone,
