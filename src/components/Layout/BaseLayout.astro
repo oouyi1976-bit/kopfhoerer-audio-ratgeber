@@ -10,15 +10,32 @@ type Props = {
 };
 
 const { title, description, canonical, bodyClass = "" } = Astro.props;
-const pageTitle = title.includes(site.name) ? title : `${title} | ${site.name}`;
+const trimmedTitle = title.trim();
+const pageTitle = trimmedTitle.startsWith(site.name) ? trimmedTitle : `${site.name} – ${trimmedTitle}`;
 const canonicalUrl = canonical ?? new URL(Astro.url.pathname, site.url).toString();
 const isHomePage = Astro.url.pathname === "/";
 const websiteJsonLd = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: site.name,
-  alternateName: "Kopfhörer Audio Ratgeber",
+  alternateName: [
+    "Kopfhörer Audio Ratgeber",
+    "Audio Ratgeber",
+    "KlangFinder Audio",
+    "Kopfhörer Ratgeber",
+  ],
   url: `${site.url}/`,
+});
+const webPageJsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "KlangFinder – Kopfhörer, Headsets & Bluetooth-Lautsprecher",
+  url: `${site.url}/`,
+  isPartOf: {
+    "@type": "WebSite",
+    name: site.name,
+    url: `${site.url}/`,
+  },
 });
 ---
 
@@ -41,6 +58,8 @@ const websiteJsonLd = JSON.stringify({
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content="/og-image.png" />
     <meta name="application-name" content={site.name} />
     <meta name="apple-mobile-web-app-title" content={site.name} />
@@ -50,6 +69,7 @@ const websiteJsonLd = JSON.stringify({
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
     {isHomePage && <script type="application/ld+json" set:html={websiteJsonLd} />}
+    {isHomePage && <script type="application/ld+json" set:html={webPageJsonLd} />}
   </head>
   <body class={bodyClass}>
     <header class="dark-section sticky top-0 z-50 border-b border-white/10 bg-[#08111f]/82 backdrop-blur-xl">
