@@ -25,7 +25,7 @@ const product = ({
   shortDescription,
   bestFor,
   highlights,
-  image: `/audio-product-images/${id}.svg`,
+  image: `/audio-product-images/${id}.webp`,
   affiliateUrl: status === "ready" ? link(asin) : "",
   affiliateStatus: status,
   asin: status === "ready" ? asin : "",
@@ -1084,11 +1084,6 @@ export function productsForCollection(collection: string) {
 `;
 
 mkdirSync(join(root, "src/data"), { recursive: true });
-mkdirSync(join(root, "public/audio-product-images"), { recursive: true });
 writeFileSync(join(root, "src/data/audioProducts.ts"), dataFile);
 
-for (const item of products) {
-  writeFileSync(join(root, "public/audio-product-images", `${item.id}.svg`), svgFor(item));
-}
-
-console.log(`Generated ${products.length} products and ${products.length} SVG images.`);
+console.log(`Generated ${products.length} products. Run scripts/create_realistic_audio_assets.py to refresh local WebP images.`);

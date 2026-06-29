@@ -21,6 +21,7 @@ export const categoryCards = [
     href: "/in-ear-kopfhoerer/",
     label: "Kompakt",
     collection: "in-ear-kopfhoerer",
+    image: "/audio-product-images/category-in-ear.webp",
   },
   {
     title: "Over-Ear-Kopfhörer",
@@ -28,6 +29,7 @@ export const categoryCards = [
     href: "/over-ear-kopfhoerer/",
     label: "Komfort",
     collection: "over-ear-kopfhoerer",
+    image: "/audio-product-images/category-over-ear.webp",
   },
   {
     title: "Noise Cancelling",
@@ -35,6 +37,7 @@ export const categoryCards = [
     href: "/noise-cancelling-kopfhoerer/",
     label: "ANC",
     collection: "noise-cancelling-kopfhoerer",
+    image: "/audio-product-images/category-anc.webp",
   },
   {
     title: "Sportkopfhörer",
@@ -42,6 +45,7 @@ export const categoryCards = [
     href: "/sportkopfhoerer/",
     label: "Aktiv",
     collection: "sportkopfhoerer",
+    image: "/audio-product-images/category-sport.webp",
   },
   {
     title: "Gaming-Headsets",
@@ -49,6 +53,7 @@ export const categoryCards = [
     href: "/gaming-headsets/",
     label: "Voice",
     collection: "gaming-headsets",
+    image: "/audio-product-images/category-gaming.webp",
   },
   {
     title: "Bluetooth-Lautsprecher",
@@ -56,6 +61,7 @@ export const categoryCards = [
     href: "/bluetooth-lautsprecher/",
     label: "Speaker",
     collection: "bluetooth-lautsprecher",
+    image: "/audio-product-images/category-speaker.webp",
   },
   {
     title: "Outdoor-Lautsprecher",
@@ -63,6 +69,7 @@ export const categoryCards = [
     href: "/outdoor-lautsprecher/",
     label: "IP-Schutz",
     collection: "outdoor-lautsprecher",
+    image: "/audio-product-images/category-outdoor.webp",
   },
   {
     title: "Party-Lautsprecher",
@@ -70,6 +77,7 @@ export const categoryCards = [
     href: "/party-lautsprecher/",
     label: "Laut",
     collection: "party-lautsprecher",
+    image: "/audio-product-images/category-party.webp",
   },
 ];
 
@@ -83,6 +91,7 @@ export const productPages = {
       "Finde In-Ears, Over-Ears, ANC-Kopfhörer, Sportkopfhörer, Gaming-Headsets und Kinderkopfhörer nach Einsatzbereich.",
     intro:
       "Kopfhörer sind selten nur gut oder schlecht. Entscheidend ist, ob sie zu deinem Alltag passen: Pendelstrecke, Sport, Calls, Gaming oder ruhiges Arbeiten verlangen unterschiedliche Stärken.",
+    image: "/audio-product-images/category-over-ear.webp",
   },
   "in-ear-kopfhoerer": {
     href: "/in-ear-kopfhoerer/",
@@ -93,6 +102,7 @@ export const productPages = {
       "Empfehlungen für Bluetooth-In-Ears, True-Wireless-Earbuds und kompakte ANC-Kopfhörer ohne Preise oder Fake-Bewertungen.",
     intro:
       "In-Ears sind ideal, wenn Kopfhörer klein, leicht und immer dabei sein sollen. Achte besonders auf Sitz, Bedienung, Mikrofone und die Frage, ob du aktive Geräuschunterdrückung wirklich brauchst.",
+    image: "/audio-product-images/category-in-ear.webp",
   },
   "over-ear-kopfhoerer": {
     href: "/over-ear-kopfhoerer/",
@@ -103,6 +113,7 @@ export const productPages = {
       "Over-Ear-Kopfhörer mit Bluetooth, ANC oder Studiokabel für lange Sessions und konzentriertes Hören.",
     intro:
       "Over-Ears sind meist bequemer als kleine Earbuds und bieten mehr Platz für Treiber, Polster und Akku. Für unterwegs zählt Gewicht, für den Schreibtisch eher Klang, Tragekomfort und Anschlussflexibilität.",
+    image: "/audio-product-images/category-over-ear.webp",
   },
   "noise-cancelling-kopfhoerer": {
     href: "/noise-cancelling-kopfhoerer/",
@@ -113,6 +124,7 @@ export const productPages = {
       "ANC-Kopfhörer und Earbuds, die sich für Pendeln, Arbeit und ruhige Hörphasen eignen.",
     intro:
       "Noise Cancelling hilft vor allem gegen gleichmäßige Geräusche wie Motoren, Lüfter und Bahnrauschen. Stimmen verschwinden nie magisch komplett, gute Transparenzmodi sind deshalb genauso wichtig.",
+    image: "/audio-product-images/category-anc.webp",
   },
   sportkopfhoerer: {
     href: "/sportkopfhoerer/",
@@ -123,6 +135,7 @@ export const productPages = {
       "Sportkopfhörer mit sicherem Halt, Schutz gegen Schweiß und offenen Optionen für mehr Umgebungswahrnehmung.",
     intro:
       "Beim Sport ist Klang nur ein Teil der Entscheidung. Sitz, Schweißschutz, Bedienung mit nassen Händen und Wahrnehmung der Umgebung sind oft wichtiger als maximale Bassleistung.",
+    image: "/audio-product-images/category-sport.webp",
   },
   "gaming-headsets": {
     href: "/gaming-headsets/",
@@ -133,6 +146,7 @@ export const productPages = {
       "Kabellose Gaming-Headsets mit Fokus auf Mikrofon, Komfort, Latenz und Multiplattform-Nutzung.",
     intro:
       "Ein gutes Gaming-Headset muss bequem bleiben, verständliche Sprache liefern und latenzarm verbinden. Bluetooth allein ist für Games oft nicht ideal, 2,4-GHz-Funk ist meist die bessere Wahl.",
+    image: "/audio-product-images/category-gaming.webp",
   },
   "bluetooth-lautsprecher": {
     href: "/bluetooth-lautsprecher/",
@@ -143,6 +157,7 @@ export const productPages = {
       "Bluetooth-Speaker von Mini bis Partyformat, sortiert nach Alltag, Outdoor und Lautstärke statt nach Fake-Tests.",
     intro:
       "Bluetooth-Lautsprecher unterscheiden sich stark nach Größe. Kleine Boxen sind praktisch, große liefern mehr Bass und Pegel. Für draußen zählen außerdem IP-Schutz, Akkulaufzeit und stabile Bedienung.",
+    image: "/audio-product-images/category-speaker.webp",
   },
   "outdoor-lautsprecher": {
     href: "/outdoor-lautsprecher/",
@@ -153,6 +168,7 @@ export const productPages = {
       "Robuste Bluetooth-Lautsprecher mit IP-Schutz, tragbaren Gehäusen und wetterfestem Fokus.",
     intro:
       "Outdoor-Speaker sollten nicht nur laut sein. Achte auf Staub- und Wasserschutz, robuste Ecken, greifbare Tasten, Gewicht und eine Akkulaufzeit, die zum geplanten Einsatz passt.",
+    image: "/audio-product-images/category-outdoor.webp",
   },
   "party-lautsprecher": {
     href: "/party-lautsprecher/",
@@ -163,6 +179,7 @@ export const productPages = {
       "Größere Bluetooth-Lautsprecher mit Bass, Licht, Powerbank- oder Mikrofonoptionen für Feiern.",
     intro:
       "Party-Lautsprecher brauchen Reserven. Für Gruppen zählen Pegel, Bass, Tragegriffe, Stromoptionen und einfache Kopplung mehr als ein möglichst kleines Gehäuse.",
+    image: "/audio-product-images/category-party.webp",
   },
 };
 
@@ -172,23 +189,27 @@ export const guides = [
     description: "Ein klarer Entscheidungsweg von In-Ear bis Over-Ear, Sport und Gaming.",
     href: "/ratgeber/welche-kopfhoerer-passen-zu-mir/",
     topic: "Kaufentscheidung",
+    image: "/audio-product-images/guide-headphones.webp",
   },
   {
     title: "Noise Cancelling einfach erklärt",
     description: "Was ANC kann, wo es Grenzen hat und wann Transparenzmodi wichtiger sind.",
     href: "/ratgeber/noise-cancelling-erklaert/",
     topic: "ANC",
+    image: "/audio-product-images/guide-anc.webp",
   },
   {
     title: "Bluetooth-Lautsprecher kaufen",
     description: "Größe, Akku, IP-Schutz, Stereo-Pairing und Partyfunktionen verständlich sortiert.",
     href: "/ratgeber/bluetooth-lautsprecher-kaufen/",
     topic: "Speaker",
+    image: "/audio-product-images/guide-speakers.webp",
   },
   {
     title: "IPX-Schutzklassen erklärt",
     description: "Was IPX4, IPX7 und IP67 im Alltag wirklich bedeuten.",
     href: "/ratgeber/ipx-schutzklasse-erklaert/",
     topic: "Robustheit",
+    image: "/audio-product-images/guide-ipx.webp",
   },
 ];

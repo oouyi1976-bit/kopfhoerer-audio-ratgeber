@@ -11,6 +11,7 @@ type Page = {
   description: string;
   intro: string;
   collection: string;
+  image: string;
 };
 
 type Props = {
@@ -30,10 +31,15 @@ const relatedGuides = guides.slice(0, 3);
     </p>
     <h1 class="mt-6 max-w-4xl text-4xl font-black leading-tight text-white sm:text-5xl">{page.title}</h1>
     <p class="mt-5 max-w-3xl text-lg leading-8 text-slate-300">{page.description}</p>
-    <div class="mt-8 grid gap-4 md:grid-cols-[1fr_auto] md:items-end">
-      <AffiliateNotice />
-      <div class="rounded-2xl border border-white/10 bg-white/10 px-5 py-4 text-sm text-slate-200">
-        <strong class="text-white">{products.length}</strong> Produkte, <strong class="text-white">{readyCount}</strong> geprüfte Amazon-Links
+    <div class="mt-8 grid gap-6 lg:grid-cols-[0.94fr_1.06fr] lg:items-end">
+      <div>
+        <AffiliateNotice />
+        <div class="mt-4 rounded-2xl border border-white/10 bg-white/10 px-5 py-4 text-sm text-slate-200">
+          <strong class="text-white">{products.length}</strong> Produkte, <strong class="text-white">{readyCount}</strong> geprüfte Amazon-Links
+        </div>
+      </div>
+      <div class="overflow-hidden rounded-3xl border border-white/10 bg-white/10 shadow-glow">
+        <img src={page.image} alt={`${page.title} realistisches Kategorie-Bild`} class="aspect-[16/10] h-full w-full object-cover" loading="eager" />
       </div>
     </div>
   </div>

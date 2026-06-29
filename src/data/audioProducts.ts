@@ -32,7 +32,7 @@ export const audioProducts: AudioProduct[] = [
       "IPX4-Schutz",
       "Schnellladefunktion"
     ],
-    "image": "/audio-product-images/sony-wf-1000xm5.svg",
+    "image": "/audio-product-images/sony-wf-1000xm5.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0C4TLFZSZ?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0C4TLFZSZ",
@@ -57,7 +57,7 @@ export const audioProducts: AudioProduct[] = [
       "IPX4",
       "Lange Case-Laufzeit"
     ],
-    "image": "/audio-product-images/sony-wf-c710n.svg",
+    "image": "/audio-product-images/sony-wf-c710n.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0DZ6Z6T1C?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0DZ6Z6T1C",
@@ -82,7 +82,7 @@ export const audioProducts: AudioProduct[] = [
       "Stabiler Halt",
       "Sechs Mikrofone"
     ],
-    "image": "/audio-product-images/jabra-elite-8-active.svg",
+    "image": "/audio-product-images/jabra-elite-8-active.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0CB6DZX79?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0CB6DZX79",
@@ -108,7 +108,7 @@ export const audioProducts: AudioProduct[] = [
       "Lange Akkulaufzeit",
       "Schnelles Pairing"
     ],
-    "image": "/audio-product-images/jbl-live-beam-3.svg",
+    "image": "/audio-product-images/jbl-live-beam-3.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0D44H2RG3?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0D44H2RG3",
@@ -133,7 +133,7 @@ export const audioProducts: AudioProduct[] = [
       "Transparenzmodus",
       "Mehrere Farben"
     ],
-    "image": "/audio-product-images/soundcore-liberty-4-nc.svg",
+    "image": "/audio-product-images/soundcore-liberty-4-nc.webp",
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
@@ -158,7 +158,7 @@ export const audioProducts: AudioProduct[] = [
       "Mikrofone für Telefonie",
       "Solide Akkulaufzeit"
     ],
-    "image": "/audio-product-images/soundcore-p40i.svg",
+    "image": "/audio-product-images/soundcore-p40i.webp",
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
@@ -182,7 +182,7 @@ export const audioProducts: AudioProduct[] = [
       "App-Anpassung",
       "Leichte Bauweise"
     ],
-    "image": "/audio-product-images/nothing-ear-a.svg",
+    "image": "/audio-product-images/nothing-ear-a.webp",
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
@@ -207,7 +207,7 @@ export const audioProducts: AudioProduct[] = [
       "Stimmige App-Bedienung",
       "Alltags-Case"
     ],
-    "image": "/audio-product-images/bose-quietcomfort-earbuds.svg",
+    "image": "/audio-product-images/bose-quietcomfort-earbuds.webp",
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
@@ -232,7 +232,7 @@ export const audioProducts: AudioProduct[] = [
       "Transparenzmodus",
       "Kompaktes Case"
     ],
-    "image": "/audio-product-images/beats-fit-pro.svg",
+    "image": "/audio-product-images/beats-fit-pro.webp",
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
@@ -258,7 +258,7 @@ export const audioProducts: AudioProduct[] = [
       "USB-C-Schnellladung",
       "Reflektierende Details"
     ],
-    "image": "/audio-product-images/shokz-openrun-pro-2.svg",
+    "image": "/audio-product-images/shokz-openrun-pro-2.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0D2HKCMBP?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0D2HKCMBP",
@@ -282,7 +282,7 @@ export const audioProducts: AudioProduct[] = [
       "Bluetooth-Multipoint",
       "Alltagstaugliches Case"
     ],
-    "image": "/audio-product-images/shokz-openfit-air.svg",
+    "image": "/audio-product-images/shokz-openfit-air.webp",
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
@@ -307,7 +307,7 @@ export const audioProducts: AudioProduct[] = [
       "Transparenzmodus",
       "Premium-Case"
     ],
-    "image": "/audio-product-images/sennheiser-momentum-true-wireless-4.svg",
+    "image": "/audio-product-images/sennheiser-momentum-true-wireless-4.webp",
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
@@ -332,7 +332,7 @@ export const audioProducts: AudioProduct[] = [
       "Transparenzmodus",
       "Bluetooth-Multipoint"
     ],
-    "image": "/audio-product-images/sony-wh-1000xm5.svg",
+    "image": "/audio-product-images/sony-wh-1000xm5.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B09Y2MYL5C?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B09Y2MYL5C",
@@ -357,7 +357,7 @@ export const audioProducts: AudioProduct[] = [
       "Touch-Bedienung",
       "Schnellladefunktion"
     ],
-    "image": "/audio-product-images/sony-wh-1000xm4.svg",
+    "image": "/audio-product-images/sony-wh-1000xm4.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B08C7KG5LP?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B08C7KG5LP",
@@ -382,7 +382,7 @@ export const audioProducts: AudioProduct[] = [
       "Klarer Call-Modus",
       "Faltbares Case"
     ],
-    "image": "/audio-product-images/sennheiser-momentum-4.svg",
+    "image": "/audio-product-images/sennheiser-momentum-4.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0CCRZPKR1?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0CCRZPKR1",
@@ -407,7 +407,7 @@ export const audioProducts: AudioProduct[] = [
       "40 Stunden mit ANC",
       "Zwei Geräte koppelbar"
     ],
-    "image": "/audio-product-images/soundcore-q30.svg",
+    "image": "/audio-product-images/soundcore-q30.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B08HMWZBXC?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B08HMWZBXC",
@@ -432,7 +432,7 @@ export const audioProducts: AudioProduct[] = [
       "Sprachassistent",
       "Multipoint"
     ],
-    "image": "/audio-product-images/jbl-live-770nc.svg",
+    "image": "/audio-product-images/jbl-live-770nc.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0CHMN4KVN?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0CHMN4KVN",
@@ -457,7 +457,7 @@ export const audioProducts: AudioProduct[] = [
       "30 Stunden Akku",
       "Klare Anrufe"
     ],
-    "image": "/audio-product-images/sony-ult-wear.svg",
+    "image": "/audio-product-images/sony-ult-wear.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0CX1TJXKV?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0CX1TJXKV",
@@ -482,7 +482,7 @@ export const audioProducts: AudioProduct[] = [
       "Transparenzmodus",
       "Immersive-Audio-Modus"
     ],
-    "image": "/audio-product-images/bose-quietcomfort-ultra-headphones.svg",
+    "image": "/audio-product-images/bose-quietcomfort-ultra-headphones.webp",
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
@@ -507,7 +507,7 @@ export const audioProducts: AudioProduct[] = [
       "40 Stunden ANC",
       "Bequemer Sitz"
     ],
-    "image": "/audio-product-images/soundcore-space-one.svg",
+    "image": "/audio-product-images/soundcore-space-one.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0C6KFZC9Z?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0C6KFZC9Z",
@@ -532,7 +532,7 @@ export const audioProducts: AudioProduct[] = [
       "Bluetooth",
       "Robuster Bügel"
     ],
-    "image": "/audio-product-images/marshall-major-v.svg",
+    "image": "/audio-product-images/marshall-major-v.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0D1VN2VB7?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0D1VN2VB7",
@@ -556,7 +556,7 @@ export const audioProducts: AudioProduct[] = [
       "USB-C",
       "Leichte Bauweise"
     ],
-    "image": "/audio-product-images/beats-solo-4.svg",
+    "image": "/audio-product-images/beats-solo-4.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0CZPMXGSH?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0CZPMXGSH",
@@ -580,7 +580,7 @@ export const audioProducts: AudioProduct[] = [
       "Faltbares Design",
       "Kabeloption"
     ],
-    "image": "/audio-product-images/audio-technica-ath-m50xbt2.svg",
+    "image": "/audio-product-images/audio-technica-ath-m50xbt2.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B09BYFHL25?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B09BYFHL25",
@@ -604,7 +604,7 @@ export const audioProducts: AudioProduct[] = [
       "Weiche Velours-Polster",
       "Made in Germany"
     ],
-    "image": "/audio-product-images/beyerdynamic-dt-770-pro.svg",
+    "image": "/audio-product-images/beyerdynamic-dt-770-pro.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0016MNAAI?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0016MNAAI",
@@ -628,7 +628,7 @@ export const audioProducts: AudioProduct[] = [
       "App-Steuerung",
       "Lange Laufzeit"
     ],
-    "image": "/audio-product-images/jbl-tour-one-m2.svg",
+    "image": "/audio-product-images/jbl-tour-one-m2.webp",
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
@@ -653,7 +653,7 @@ export const audioProducts: AudioProduct[] = [
       "App-Steuerung",
       "Multiplattform"
     ],
-    "image": "/audio-product-images/steelseries-arctis-nova-7-gen2.svg",
+    "image": "/audio-product-images/steelseries-arctis-nova-7-gen2.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0FS7JXWJG?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0FS7JXWJG",
@@ -677,7 +677,7 @@ export const audioProducts: AudioProduct[] = [
       "53-mm-Treiber",
       "Abnehmbares Mikrofon"
     ],
-    "image": "/audio-product-images/hyperx-cloud-iii-s-wireless.svg",
+    "image": "/audio-product-images/hyperx-cloud-iii-s-wireless.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0F844LMG3?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0F844LMG3",
@@ -701,7 +701,7 @@ export const audioProducts: AudioProduct[] = [
       "Bluetooth",
       "PRO-G Graphene-Treiber"
     ],
-    "image": "/audio-product-images/logitech-g-astro-a50-lightspeed.svg",
+    "image": "/audio-product-images/logitech-g-astro-a50-lightspeed.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0DBJ5PBLT?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0DBJ5PBLT",
@@ -725,7 +725,7 @@ export const audioProducts: AudioProduct[] = [
       "TriForce-Treiber",
       "Bluetooth"
     ],
-    "image": "/audio-product-images/razer-blackshark-v2-hyperspeed.svg",
+    "image": "/audio-product-images/razer-blackshark-v2-hyperspeed.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0CBRTBSNV?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0CBRTBSNV",
@@ -749,7 +749,7 @@ export const audioProducts: AudioProduct[] = [
       "Omnidirektionales Mikrofon",
       "iCUE-Kompatibilität"
     ],
-    "image": "/audio-product-images/corsair-hs80-max.svg",
+    "image": "/audio-product-images/corsair-hs80-max.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0D5Z1C5TB?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0D5Z1C5TB",
@@ -773,7 +773,7 @@ export const audioProducts: AudioProduct[] = [
       "Solider Bügel",
       "PC- und Konsolenfokus"
     ],
-    "image": "/audio-product-images/logitech-g-pro-x-2-lightspeed.svg",
+    "image": "/audio-product-images/logitech-g-pro-x-2-lightspeed.webp",
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
@@ -797,7 +797,7 @@ export const audioProducts: AudioProduct[] = [
       "Leichtes Design",
       "Ausklappbares Mikrofon"
     ],
-    "image": "/audio-product-images/sony-inzone-h5.svg",
+    "image": "/audio-product-images/sony-inzone-h5.webp",
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
@@ -821,7 +821,7 @@ export const audioProducts: AudioProduct[] = [
       "50 Stunden Wiedergabe",
       "Einfache Bedienung"
     ],
-    "image": "/audio-product-images/jbl-junior-470nc.svg",
+    "image": "/audio-product-images/jbl-junior-470nc.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0DHS72HR8?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0DHS72HR8",
@@ -846,7 +846,7 @@ export const audioProducts: AudioProduct[] = [
       "30 Stunden Wiedergabe",
       "Weiche Polster"
     ],
-    "image": "/audio-product-images/belkin-soundform-mini.svg",
+    "image": "/audio-product-images/belkin-soundform-mini.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0D4ZNWLKL?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0D4ZNWLKL",
@@ -870,7 +870,7 @@ export const audioProducts: AudioProduct[] = [
       "LED-Leuchten",
       "Weiche Ohrpolster"
     ],
-    "image": "/audio-product-images/philips-tak4206.svg",
+    "image": "/audio-product-images/philips-tak4206.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B09313H1MS?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B09313H1MS",
@@ -894,7 +894,7 @@ export const audioProducts: AudioProduct[] = [
       "Bis zu 20 Stunden",
       "Kräftiger Bass"
     ],
-    "image": "/audio-product-images/jbl-charge-5.svg",
+    "image": "/audio-product-images/jbl-charge-5.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B08VDNCZT9?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B08VDNCZT9",
@@ -918,7 +918,7 @@ export const audioProducts: AudioProduct[] = [
       "Bis zu 12 Stunden",
       "Sehr transportabel"
     ],
-    "image": "/audio-product-images/jbl-flip-6.svg",
+    "image": "/audio-product-images/jbl-flip-6.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B09HGRXXTM?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B09HGRXXTM",
@@ -943,7 +943,7 @@ export const audioProducts: AudioProduct[] = [
       "Playtime-Boost",
       "Viele Farben"
     ],
-    "image": "/audio-product-images/jbl-go-4.svg",
+    "image": "/audio-product-images/jbl-go-4.webp",
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
@@ -968,7 +968,7 @@ export const audioProducts: AudioProduct[] = [
       "16 Stunden Akku",
       "Freisprechfunktion"
     ],
-    "image": "/audio-product-images/sony-srs-xb100.svg",
+    "image": "/audio-product-images/sony-srs-xb100.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0CCYFP62W?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0CCYFP62W",
@@ -993,7 +993,7 @@ export const audioProducts: AudioProduct[] = [
       "Robustes Gehäuse",
       "Klarer Klangfokus"
     ],
-    "image": "/audio-product-images/bose-soundlink-flex-2.svg",
+    "image": "/audio-product-images/bose-soundlink-flex-2.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0D6WD2QSQ?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0D6WD2QSQ",
@@ -1017,7 +1017,7 @@ export const audioProducts: AudioProduct[] = [
       "Staubdicht",
       "Outdoor-Modus"
     ],
-    "image": "/audio-product-images/ultimate-ears-wonderboom-4.svg",
+    "image": "/audio-product-images/ultimate-ears-wonderboom-4.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0D3X3YKVF?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0D3X3YKVF",
@@ -1042,7 +1042,7 @@ export const audioProducts: AudioProduct[] = [
       "IPX7",
       "13 Stunden Laufzeit"
     ],
-    "image": "/audio-product-images/soundcore-motion-300.svg",
+    "image": "/audio-product-images/soundcore-motion-300.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0CGDL42CT?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0CGDL42CT",
@@ -1066,7 +1066,7 @@ export const audioProducts: AudioProduct[] = [
       "IPX7",
       "USB-C"
     ],
-    "image": "/audio-product-images/soundcore-motion-plus.svg",
+    "image": "/audio-product-images/soundcore-motion-plus.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B07P39MLKH?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B07P39MLKH",
@@ -1090,7 +1090,7 @@ export const audioProducts: AudioProduct[] = [
       "24 Stunden Akku",
       "LED-Licht"
     ],
-    "image": "/audio-product-images/soundcore-boom-2.svg",
+    "image": "/audio-product-images/soundcore-boom-2.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0CQ53RVTW?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0CQ53RVTW",
@@ -1115,7 +1115,7 @@ export const audioProducts: AudioProduct[] = [
       "RGB-Lichter",
       "Powerbank"
     ],
-    "image": "/audio-product-images/soundcore-boom-2-plus.svg",
+    "image": "/audio-product-images/soundcore-boom-2-plus.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0CZ7DY692?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0CZ7DY692",
@@ -1140,7 +1140,7 @@ export const audioProducts: AudioProduct[] = [
       "15 Stunden Akku",
       "45 Meter Reichweite"
     ],
-    "image": "/audio-product-images/ultimate-ears-boom-4.svg",
+    "image": "/audio-product-images/ultimate-ears-boom-4.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0D3WLCJSJ?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0D3WLCJSJ",
@@ -1164,7 +1164,7 @@ export const audioProducts: AudioProduct[] = [
       "20 Stunden Akku",
       "Kräftige Tiefen"
     ],
-    "image": "/audio-product-images/ultimate-ears-megaboom-4.svg",
+    "image": "/audio-product-images/ultimate-ears-megaboom-4.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0D3WMD9C4?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0D3WMD9C4",
@@ -1189,7 +1189,7 @@ export const audioProducts: AudioProduct[] = [
       "AUX-Eingang",
       "Wasserdichtes Gehäuse"
     ],
-    "image": "/audio-product-images/bose-soundlink-max.svg",
+    "image": "/audio-product-images/bose-soundlink-max.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0D1CSN1QR?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0D1CSN1QR",
@@ -1213,7 +1213,7 @@ export const audioProducts: AudioProduct[] = [
       "12 Stunden Akku",
       "Freisprechfunktion"
     ],
-    "image": "/audio-product-images/sony-ult-field-1.svg",
+    "image": "/audio-product-images/sony-ult-field-1.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0CX1WXP8M?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0CX1WXP8M",
@@ -1238,7 +1238,7 @@ export const audioProducts: AudioProduct[] = [
       "Schulterriemen",
       "ULT Power Sound"
     ],
-    "image": "/audio-product-images/sony-ult-field-3.svg",
+    "image": "/audio-product-images/sony-ult-field-3.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0DZ76B7XQ?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0DZ76B7XQ",
@@ -1262,7 +1262,7 @@ export const audioProducts: AudioProduct[] = [
       "Kompaktes Gehäuse",
       "Klassische Bedienung"
     ],
-    "image": "/audio-product-images/marshall-emberton-iii.svg",
+    "image": "/audio-product-images/marshall-emberton-iii.webp",
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
@@ -1286,7 +1286,7 @@ export const audioProducts: AudioProduct[] = [
       "17+ Stunden Akku",
       "Befestigungsband"
     ],
-    "image": "/audio-product-images/marshall-willen-ii.svg",
+    "image": "/audio-product-images/marshall-willen-ii.webp",
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
@@ -1311,7 +1311,7 @@ export const audioProducts: AudioProduct[] = [
       "IP67",
       "Powerbank-Funktion"
     ],
-    "image": "/audio-product-images/tribit-stormbox-micro-2.svg",
+    "image": "/audio-product-images/tribit-stormbox-micro-2.webp",
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
@@ -1336,7 +1336,7 @@ export const audioProducts: AudioProduct[] = [
       "Bassmodus",
       "Lange Laufzeit"
     ],
-    "image": "/audio-product-images/tribit-stormbox-blast.svg",
+    "image": "/audio-product-images/tribit-stormbox-blast.webp",
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
@@ -1361,7 +1361,7 @@ export const audioProducts: AudioProduct[] = [
       "Stereopairing möglich",
       "Kräftige Abstimmung"
     ],
-    "image": "/audio-product-images/teufel-rockster-go-2.svg",
+    "image": "/audio-product-images/teufel-rockster-go-2.webp",
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
@@ -1385,7 +1385,7 @@ export const audioProducts: AudioProduct[] = [
       "12 Stunden Laufzeit",
       "Playtime-Boost"
     ],
-    "image": "/audio-product-images/jbl-clip-5.svg",
+    "image": "/audio-product-images/jbl-clip-5.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0CX97B418?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0CX97B418",
@@ -1410,7 +1410,7 @@ export const audioProducts: AudioProduct[] = [
       "Spritzwasserschutz",
       "Mikrofon-/Instrumentenoptionen"
     ],
-    "image": "/audio-product-images/jbl-partybox-club-120.svg",
+    "image": "/audio-product-images/jbl-partybox-club-120.webp",
     "affiliateUrl": "https://www.amazon.de/dp/B0DJ1QNM1R?tag=epic05e-21",
     "affiliateStatus": "ready",
     "asin": "B0DJ1QNM1R",
@@ -1434,7 +1434,7 @@ export const audioProducts: AudioProduct[] = [
       "Lichteffekte",
       "Mikrofonoptionen"
     ],
-    "image": "/audio-product-images/sony-ult-tower-9.svg",
+    "image": "/audio-product-images/sony-ult-tower-9.webp",
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
@@ -1458,7 +1458,7 @@ export const audioProducts: AudioProduct[] = [
       "Bluetooth",
       "Tragefreundliches Gehäuse"
     ],
-    "image": "/audio-product-images/lg-xboom-go-xg2t.svg",
+    "image": "/audio-product-images/lg-xboom-go-xg2t.webp",
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
@@ -1483,7 +1483,7 @@ export const audioProducts: AudioProduct[] = [
       "Streamingdienste",
       "Stereo-Pairing möglich"
     ],
-    "image": "/audio-product-images/denon-home-150.svg",
+    "image": "/audio-product-images/denon-home-150.webp",
     "affiliateUrl": "",
     "affiliateStatus": "placeholder",
     "asin": "",
