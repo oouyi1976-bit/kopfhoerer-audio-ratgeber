@@ -1,6 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="16" fill="#08111f"/>
-  <path d="M17 35c0-12 30-12 30 0" fill="none" stroke="#2dd4ff" stroke-width="6" stroke-linecap="round"/>
-  <rect x="12" y="32" width="14" height="20" rx="6" fill="#8b5cf6"/>
-  <rect x="38" y="32" width="14" height="20" rx="6" fill="#2dd4ff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">KlangFinder Icon</title>
+  <desc id="desc">Modernes Kopfhörer- und Soundwave-Symbol in Neon-Blau und Violett.</desc>
+  <defs>
+    <linearGradient id="bg" x1="76" y1="42" x2="438" y2="470" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="0.55" stop-color="#11182c"/>
+      <stop offset="1" stop-color="#050815"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="115" y1="114" x2="404" y2="398" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2dd4ff"/>
+      <stop offset="0.48" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="9" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.16 0 0 0 0 0.78 0 0 0 0 1 0 0 0 0.72 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="141" cy="105" r="112" fill="#2dd4ff" opacity="0.12"/>
+  <circle cx="399" cy="399" r="132" fill="#a855f7" opacity="0.15"/>
+  <path d="M150 283v-58c0-58 47-105 106-105s106 47 106 105v58" fill="none" stroke="url(#accent)" stroke-width="42" stroke-linecap="round" filter="url(#glow)"/>
+  <rect x="104" y="252" width="64" height="124" rx="30" fill="url(#accent)"/>
+  <rect x="344" y="252" width="64" height="124" rx="30" fill="url(#accent)"/>
+  <path d="M206 275c14-25 27-25 40 0s27 25 40 0 27-25 40 0" fill="none" stroke="#eefbff" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M210 330h92c23 0 42-18 42-41" fill="none" stroke="#7dd3fc" stroke-width="18" stroke-linecap="round" opacity="0.92"/>
+  <circle cx="330" cy="288" r="12" fill="#eefbff"/>
 </svg>
